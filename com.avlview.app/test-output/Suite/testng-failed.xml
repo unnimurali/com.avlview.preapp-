@@ -7,16 +7,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.AddClientPageTest">
+      <class name="com.avlview.app.testcases.LoginPageTest">
         <methods>
-          <include name="TemplateTest"/>
-          <include name="setExtent"/>
-          <include name="setup"/>
-          <include name="endReport"/>
-          <include name="deactivateSearchTest"/>
           <include name="teardown"/>
+          <include name="setup"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="loginclick"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.AddClientPageTest -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

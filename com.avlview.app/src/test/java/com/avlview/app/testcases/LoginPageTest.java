@@ -35,7 +35,7 @@ public class LoginPageTest extends TestBase {
 		fp = new ForgotPasswordPage();
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validateLoginPageExistTest() {
 
 		extentTest = extent.startTest("validateLoginPageExistTest");
@@ -81,7 +81,7 @@ public class LoginPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 8, enabled = false)
 	public void loginclick() throws IOException {
 		cp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
 

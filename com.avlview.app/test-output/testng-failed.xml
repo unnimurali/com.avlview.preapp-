@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG"/>
-    <listener class-name="com.avlview.Analyzer.MyTransformer"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.AddClientPageTest">
+      <class name="com.avlview.app.testcases.LoginPageTest">
         <methods>
-          <include name="TemplateTest"/>
-          <include name="setExtent"/>
-          <include name="setup"/>
-          <include name="endReport"/>
-          <include name="deactivateSearchTest"/>
           <include name="teardown"/>
+          <include name="setup"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="loginclick"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.AddClientPageTest -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
