@@ -7,15 +7,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="rough.NewTest1">
+      <class name="com.avlview.app.testcases.AddClientPageTest">
         <methods>
-          <include name="teardown"/>
+          <include name="TemplateTest"/>
           <include name="setExtent"/>
           <include name="setup"/>
           <include name="endReport"/>
-          <include name="logoTest"/>
+          <include name="deactivateSearchTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- rough.NewTest1 -->
+      </class> <!-- com.avlview.app.testcases.AddClientPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
