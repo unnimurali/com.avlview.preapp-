@@ -9,7 +9,11 @@
     <classes>
       <class name="rough.NewTest1">
         <methods>
-          <include name="launchBrowser"/>
+          <include name="teardown"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="endReport"/>
+          <include name="logoTest"/>
         </methods>
       </class> <!-- rough.NewTest1 -->
     </classes>
