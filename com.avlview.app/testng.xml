@@ -5,7 +5,7 @@
 	<listeners>
 
 
-		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" />
+<!-- 		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" /> -->
 		<listener class-name="com.avlview.Analyzer.MyTransformer" />
 
 
@@ -15,9 +15,9 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.avlview.app.testcases.LoginPageTest" />
-			<!-- <class name="com.avlview.app.testcases.ForgotPasswordPageTest" /> -->
-			<!-- <class name="com.avlview.app.testcases.ClientsPageTest" /> -->
-			<!-- <class name="com.avlview.app.testcases.AddClientPageTest" /> -->
+			<class name="com.avlview.app.testcases.ForgotPasswordPageTest" />
+			<class name="com.avlview.app.testcases.ClientsPageTest" />
+			<class name="com.avlview.app.testcases.AddClientPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

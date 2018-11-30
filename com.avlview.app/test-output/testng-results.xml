@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41695" started-at="2018-11-26T16:45:10Z" finished-at="2018-11-26T16:45:52Z">
+  <suite name="Default suite" duration-ms="40939" started-at="2018-11-30T09:10:55Z" finished-at="2018-11-30T09:11:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41695" started-at="2018-11-26T16:45:10Z" finished-at="2018-11-26T16:45:52Z">
-      <class name="com.avlview.app.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@6e20b53a]" name="setExtent" is-config="true" duration-ms="173" started-at="2018-11-26T16:45:10Z" finished-at="2018-11-26T16:45:10Z">
+    <test name="Default test" duration-ms="40939" started-at="2018-11-30T09:10:55Z" finished-at="2018-11-30T09:11:36Z">
+      <class name="com.avlview.app.testcases.AddVehicleTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.AddVehicleTest@18d318c]" name="setExtent" is-config="true" duration-ms="297" started-at="2018-11-30T09:10:55Z" finished-at="2018-11-30T09:10:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@6e20b53a]" name="setup" is-config="true" duration-ms="39676" started-at="2018-11-26T16:45:10Z" finished-at="2018-11-26T16:45:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddVehicleTest@18d318c]" name="setup" is-config="true" duration-ms="26060" started-at="2018-11-30T09:10:55Z" finished-at="2018-11-30T09:11:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest@6e20b53a]" name="validateLoginPageExistTest" duration-ms="491" started-at="2018-11-26T16:45:50Z" finished-at="2018-11-26T16:45:50Z">
+        <test-method status="PASS" signature="TemplateTest()[pri:1, instance:com.avlview.app.testcases.AddVehicleTest@18d318c]" name="TemplateTest" duration-ms="12846" started-at="2018-11-30T09:11:21Z" finished-at="2018-11-30T09:11:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginPageExistTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@6e20b53a]" name="teardown" is-config="true" duration-ms="900" started-at="2018-11-26T16:45:50Z" finished-at="2018-11-26T16:45:51Z">
+        </test-method> <!-- TemplateTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddVehicleTest@18d318c]" name="teardown" is-config="true" duration-ms="1184" started-at="2018-11-30T09:11:34Z" finished-at="2018-11-30T09:11:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginPageExistTest status=SUCCESS method=LoginPageTest.validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest@6e20b53a] output={null}]]]>
+                <![CDATA[[TestResult name=TemplateTest status=SUCCESS method=AddVehicleTest.TemplateTest()[pri:1, instance:com.avlview.app.testcases.AddVehicleTest@18d318c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@6e20b53a]" name="endReport" is-config="true" duration-ms="432" started-at="2018-11-26T16:45:51Z" finished-at="2018-11-26T16:45:52Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.AddVehicleTest@18d318c]" name="endReport" is-config="true" duration-ms="509" started-at="2018-11-30T09:11:35Z" finished-at="2018-11-30T09:11:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.avlview.app.testcases.LoginPageTest -->
+      </class> <!-- com.avlview.app.testcases.AddVehicleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

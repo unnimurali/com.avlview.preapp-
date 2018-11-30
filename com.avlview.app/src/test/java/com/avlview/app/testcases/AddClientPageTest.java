@@ -18,8 +18,6 @@ import com.avlview.app.pages.LoginPage;
 import com.avlview.app.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
 
-import rough.NewTest1;
-
 public class AddClientPageTest extends TestBase {
 
 	LoginPage lp;
@@ -31,16 +29,26 @@ public class AddClientPageTest extends TestBase {
 		// TODO Auto-generated constructor stub
 	}
 
-	@BeforeMethod
+	@BeforeMethod()
 	public void setup() throws IOException {
 		Initialization();
 		lp = new LoginPage();
 		cp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
 		// cp=lp.login("mapview", "mapview");
+
+		if (cp == null) {
+
+			// driver.quit();
+			// throw new SkipException("Skipping tests because login not available.");
+			Assert.fail("Login failed");
+
+		}
+
 		ac = new AddClientPage();
+
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void TemplateTest() throws IOException, InterruptedException {
 
 		extentTest = extent.startTest("TemplateTest");
@@ -52,7 +60,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "0");
 	}
 
-	@Test(priority = 2, enabled = true)
+	@Test(priority = 2, enabled = false)
 	public void ClickAddClientTest() throws IOException {
 
 		extentTest = extent.startTest("ClickAddClientTest");
@@ -70,6 +78,9 @@ public class AddClientPageTest extends TestBase {
 
 	@Test(priority = 3, enabled = false, dataProvider = "getData")
 	public void AddclientTest(Hashtable<String, String> data) throws IOException, InterruptedException, AWTException {
+
+		extentTest = extent.startTest("AddclientTest");
+
 		ac = cp.addclientclick();
 		// System.out.println(data.get("isd").substring(0, 2));
 
@@ -78,14 +89,16 @@ public class AddClientPageTest extends TestBase {
 				data.get("validation"));
 
 		String validatefnmsg = ac.validatemsg();
-		// System.out.println(validatefnmsg);
+		System.out.println(validatefnmsg);
+
 		// System.out.println(data.get("validation"));
-		Assert.assertEquals(validatefnmsg, data.get("validation"));
+		// Assert.assertEquals(validatefnmsg, data.get("validation"));
 
 	}
 
 	@Test(priority = 4, enabled = false)
 	public void SearchAddedClientTest() throws IOException, InterruptedException, AWTException {
+		extentTest = extent.startTest("SearchAddedClientTest");
 		// ac=cp.addclientclick();
 		String validateSearchResult = ac.validatesClientsearchresult();
 		Assert.assertEquals(validateSearchResult, "1");
@@ -93,12 +106,13 @@ public class AddClientPageTest extends TestBase {
 
 	@Test(priority = 5, enabled = false)
 	public void deActivateClientTest() throws IOException, InterruptedException, AWTException {
+		extentTest = extent.startTest("deActivateClientTest");
 		// ac=cp.addclientclick();
 		String validateSearchResult = ac.deActivateClient();
 		Assert.assertEquals(validateSearchResult, "0");
 	}
 
-	@Test(priority = 6, enabled = true)
+	@Test(priority = 6, enabled = false)
 	public void deactivateSearchTest() throws InterruptedException {
 
 		extentTest = extent.startTest("deactivateSearchTest");
@@ -107,26 +121,69 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "1");
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void items25Test() throws InterruptedException {
-		boolean cnt = ac.itemsperpage("25");
+		extentTest = extent.startTest("items25Test");
+
+		// boolean cnt = ac.itemsperpage("25");
+		// Assert.assertTrue(cnt);
+
+		ac.itemsperpage("25");
+		boolean cnt = ac.items25();
 		Assert.assertTrue(cnt);
+
+		/*
+		 * String result = ac.itemsperpage("25"); Assert.assertEquals(result, "1 - 25");
+		 */
+
 	}
 
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 8, enabled = true)
 	public void items50Test() throws InterruptedException {
-		boolean cnt = ac.itemsperpage("50");
+		extentTest = extent.startTest("items50Test");
+
+		// boolean cnt = ac.itemsperpage("50");
+		// Assert.assertTrue(cnt);
+
+		ac.itemsperpage("50");
+		boolean cnt = ac.items50();
 		Assert.assertTrue(cnt);
+
+		/*
+		 * String result = ac.itemsperpage("50"); Assert.assertEquals(result, "1 - 50");
+		 */
 	}
 
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 9, enabled = true)
 	public void items100Test() throws InterruptedException {
-		boolean cnt = ac.itemsperpage("100");
+		extentTest = extent.startTest("items100Test");
+
+		ac.itemsperpage("100");
+		boolean cnt = ac.items100();
 		Assert.assertTrue(cnt);
+
 	}
 
-	@Test(priority = 10, enabled = false)
-	public void PaginationTest() throws InterruptedException {
+	@Test(priority = 10, enabled = true)
+	public void PaginationTestfor25Items() throws InterruptedException {
+		extentTest = extent.startTest("PaginationTest");
+		ac.itemsperpage("25");
+		String paginationtxt = ac.pagination();
+		Assert.assertEquals(paginationtxt, "26 - 50");
+	}
+
+	@Test(priority = 11, enabled = true)
+	public void PaginationTestfor50Items() throws InterruptedException {
+		extentTest = extent.startTest("PaginationTest");
+		ac.itemsperpage("50");
+		String paginationtxt = ac.pagination();
+		Assert.assertEquals(paginationtxt, "51 - 100");
+	}
+
+	@Test(priority = 12, enabled = true)
+	public void PaginationTestfor100Items() throws InterruptedException {
+		extentTest = extent.startTest("PaginationTest");
+		ac.itemsperpage("100");
 		String paginationtxt = ac.pagination();
 		Assert.assertEquals(paginationtxt, "101 - 200");
 	}
@@ -137,18 +194,24 @@ public class AddClientPageTest extends TestBase {
 		return TestUtil.getData("Addclient");
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void teardown(ITestResult result) throws IOException {
+
+		System.out.println(result.getStatus());
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
 			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
 
-			String screenshotPath = NewTest1.getScreenshot(driver, result.getName());
+			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
 			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
 
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
+
+			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+			extentTest.log(LogStatus.SKIP, extentTest.addScreenCapture(screenshotPath));
+
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
 

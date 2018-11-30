@@ -13,8 +13,6 @@ import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
 import com.relevantcodes.extentreports.LogStatus;
 
-import rough.NewTest1;
-
 public class ClientsPageTest extends TestBase {
 
 	LoginPage lp;
@@ -32,39 +30,44 @@ public class ClientsPageTest extends TestBase {
 		cp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validateclientpageExistTest() {
 		extentTest = extent.startTest("validateclientpageExistTest");
 		String validateclientpage = cp.validateClientspage();
 		Assert.assertEquals(validateclientpage, "Clients");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void validatePartnerLogoExistTest() throws InterruptedException {
+		extentTest = extent.startTest("validatePartnerLogoExistTest");
 		boolean validatePartnerLogo = cp.validatelogo();
 		Assert.assertTrue(validatePartnerLogo);
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void validateAddclientExistTest() {
+		extentTest = extent.startTest("validateAddclientExistTest");
 		String validateaddclient = cp.validateAddclient();
 		Assert.assertEquals(validateaddclient, "ADD CLIENT");
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void validateSearchExistTest() {
+		extentTest = extent.startTest("validateSearchExistTest");
 		boolean validateSearch = cp.validateSearch();
 		Assert.assertTrue(validateSearch);
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void validateSearchResultTest() throws InterruptedException {
+		extentTest = extent.startTest("validateSearchResultTest");
 		String validateSearchResult = cp.validatesExistingclientearchresult();
 		Assert.assertEquals(validateSearchResult, "1");
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void validateTotalTabsTest() throws InterruptedException {
+		extentTest = extent.startTest("validateTotalTabsTest");
 		int validateTabcount = cp.validatetotaltabs();
 		Assert.assertEquals(validateTabcount, 3);
 
@@ -77,7 +80,7 @@ public class ClientsPageTest extends TestBase {
 			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
 			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
 
-			String screenshotPath = NewTest1.getScreenshot(driver, result.getName());
+			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
 			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
 
 		} else if (result.getStatus() == ITestResult.SKIP) {

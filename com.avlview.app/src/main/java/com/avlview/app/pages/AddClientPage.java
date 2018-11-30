@@ -12,18 +12,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.UnsupportedCommandException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.SkipException;
 
 import com.avlview.app.base.TestBase;
+import com.avlview.app.utilities.JavaScriptUtil;
 
 public class AddClientPage extends TestBase {
 
 	String logo;
 	public static String txt;
+
+	boolean count = false;
 
 	public AddClientPage() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -37,7 +40,6 @@ public class AddClientPage extends TestBase {
 	WebElement validatenoclient;
 
 	@FindBy(xpath = "//div[@class='header_notification ng-star-inserted']/span")
-	@CacheLookup
 	WebElement validationmsg;
 
 	@FindBy(xpath = "//span[contains(text(),'Save')]")
@@ -106,6 +108,9 @@ public class AddClientPage extends TestBase {
 	@FindBy(xpath = "//button[2][@type='button']")
 	WebElement paginationbtn;
 
+	@FindBy(xpath = "//a[contains(text(),'newclint')]")
+	WebElement newclient;
+
 	public String validateAddclient() {
 		System.out.println(addclient.getText());
 		return addclient.getText();
@@ -115,34 +120,26 @@ public class AddClientPage extends TestBase {
 
 		String Valmsg = null;
 
-		// System.out.println(val);
-		// Valmsg = validationmsg.getText();
-		// System.out.println(Valmsg);
-		/*
-		 * if (val.equals("To proceed, you must enter mobile number.")) { //
-		 * System.out.println(val); Valmsg = validationmsgmble.getText(); //
-		 * System.out.println(msg1); } else { // System.out.println(val); Valmsg =
-		 * validationmsg.getText(); // System.out.println(msg1);
-		 * 
-		 * } if (val.contains("you")) { Valmsg = validationmsgmble.getText();
-		 * System.out.println(Valmsg); } else { Valmsg = validationmsg.getText();
-		 * System.out.println(Valmsg); }
-		 */
-
 		Valmsg = validationmsg.getText();
+		JavaScriptUtil.drawBorder(validationmsg, driver);
 		System.out.println(Valmsg);
 
 		return Valmsg;
 
 	}
 
-	public void addclient(String logo, String ftName, String ltName, String mail, String isd, String mobileno,
+	public void addclient(String logoname, String ftName, String ltName, String mail, String isd, String mobileno,
 			String cmpany, String timezone, String paymntplan, String validation)
 			throws InterruptedException, AWTException {
 
 		String requiredCity = null;
+		String logo;
 
-		if (logo != "") {
+		logo = System.getProperty("user.dir") + "\\src\\main\\resources\\Logo\\" + logoname;
+
+		if (logoname != "") {
+
+			JavaScriptUtil.drawBorder(Logo, driver);
 			setClipboardData(logo);
 
 			/*
@@ -172,8 +169,34 @@ public class AddClientPage extends TestBase {
 			isd = isd.substring(0, isd.indexOf('.'));
 			requiredCity = isd.trim();
 
-			WebElement ISD = driver.findElement(By.xpath("//span[contains(text(),'" + requiredCity + "')]"));
-			ISD.click();
+			// WebElement ISD = driver
+			// .findElement(By.xpath("//span[@class='mat-option-text'][contains(text(),'" +
+			// requiredCity + "')]"));
+			// ISD.click();
+
+			// List<WebElement> ISD =
+			// driver.findElements(By.xpath("//span[@class='mat-option-text'][contains(text(),'"
+			// + requiredCity + "')]"));
+			// for (int i = 0; i < ISD.size(); i++) {
+			// if (ISD.get(i).getText().equals(requiredCity)) {
+			// ISD.get(i).click();
+			// break;
+			// }
+			// }
+
+			List<WebElement> ISD = driver.findElements(
+					By.xpath("//span[@class='mat-option-text'][contains(text(),'" + requiredCity + "')]"));
+			System.out.println(ISD.size());
+
+			for (WebElement ele : ISD) {
+				System.out.println(ele.getText());
+				System.out.println(requiredCity);
+
+				if (ele.getText().equals(requiredCity)) {
+					ele.click();
+					break;
+				}
+			}
 
 		}
 
@@ -190,7 +213,11 @@ public class AddClientPage extends TestBase {
 
 		} else {
 			paymentplan.click();
-			driver.findElement(By.xpath("//span[contains(text(),'" + paymntplan + "')]")).click();
+			// driver.findElement(By.xpath("//span[contains(text(),'" + paymntplan +
+			// "')]")).click();
+
+			WebElement PP = driver.findElement(By.xpath("//span[contains(text(),'" + paymntplan + "')]"));
+			PP.click();
 
 		}
 
@@ -252,76 +279,24 @@ public class AddClientPage extends TestBase {
 
 	}
 
-	public boolean itemsperpage(String cnt) throws InterruptedException, UnsupportedCommandException {
-		boolean count = false;
+	public void itemsperpage(String cnt) throws InterruptedException, UnsupportedCommandException {
 
 		itemcount.click();
 
 		if (cnt.equals("25")) {
 			System.out.println("25");
 			itemsperpage25.click();
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 		} else if (cnt.equals("50")) {
 			System.out.println("50");
 			itemsperpage50.click();
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 		} else {
-			System.out.println("100");
+			System.out.println("Clicking 100");
 			itemsperpage100.click();
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 		}
 
-		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
-
-		int rows_count = rows_table.size();
-		System.out.println(rows_count);
-		if (rows_count > 1 && rows_count <= 25) {
-			count = true;
-			System.out.println("25");
-
-		} else if (rows_count > 25 && rows_count <= 50) {
-			count = true;
-			System.out.println("50");
-		} else {
-			count = true;
-			System.out.println("100");
-		}
-		System.out.println(count);
-
-		// Actions actions = new Actions(driver);
-		// actions.moveToElement(paginationbtn).build().perform();
-
-		paginationbtn.sendKeys(Keys.PAGE_DOWN);
-
-		Thread.sleep(1200);
-
-		return count;
-
-	}
-
-	public String pagination() throws InterruptedException {
-
-		// Actions actions = new Actions(driver);
-		// actions.moveToElement(itemcount).build().perform();
-
-		itemcount.click();
-		itemsperpage100.click();
-
-		paginationbtn.click();
-
-		String pagetxt = rangelabel.getText();
-		System.out.println(pagetxt);
-		// String noSpaceStr = pagetxt.replaceAll("\\s", "");
-		String substrtxt = pagetxt.substring(0, 9);
-		System.out.println(substrtxt);
-
-		// actions.moveToElement(paginationbtn).build().perform();
-		paginationbtn.sendKeys(Keys.PAGE_DOWN);
-		Thread.sleep(1300);
-
-		return substrtxt;
-
-		// return true;
 	}
 
 	public String validatesClientsearchresult() {
@@ -349,6 +324,126 @@ public class AddClientPage extends TestBase {
 		return searchcount.getText();
 		// TODO Auto-generated method stub
 		// return null;
+	}
+
+	public boolean items25() throws InterruptedException {
+		int rows_count;
+		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
+
+		rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		if (rows_count > 0) {
+
+			if (rows_count > 1 && rows_count <= 25) {
+				count = true;
+			} else {
+				throw new SkipException("Skipping Item25 as no data available.");
+			}
+		} else {
+			throw new SkipException("Skipping as no client data available.");
+		}
+
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+
+		Thread.sleep(3000);
+
+		return count;
+	}
+
+	public boolean items50() throws InterruptedException {
+		int rows_count;
+		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
+
+		rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		if (rows_count > 0) {
+
+			if (rows_count > 25 && rows_count <= 50) {
+				count = true;
+			} else {
+				throw new SkipException("Skipping Item50 as no data available.");
+			}
+		} else {
+			throw new SkipException("Skipping as no client data available.");
+		}
+
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+
+		Thread.sleep(3000);
+
+		return count;
+	}
+
+	public boolean items100() throws InterruptedException {
+		int rows_count;
+		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
+
+		rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		if (rows_count > 0) {
+
+			if (rows_count > 50 && rows_count <= 100) {
+				count = true;
+			} else {
+				throw new SkipException("Skipping Item100 as no data available.");
+			}
+		} else {
+			throw new SkipException("Skipping as no client data available.");
+		}
+
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+
+		Thread.sleep(3000);
+		return count;
+	}
+
+	public String pagination() throws InterruptedException {
+		String pagetxt;
+		String substrtxt;
+
+		// Actions actions = new Actions(driver);
+		// actions.moveToElement(itemcount).build().perform();
+
+		System.out.println(paginationbtn.isEnabled());
+
+		if (paginationbtn.isEnabled()) {
+			paginationbtn.click();
+
+			Thread.sleep(2000);
+
+			pagetxt = rangelabel.getText();
+			System.out.println(pagetxt);
+
+			int firstIndex = pagetxt.indexOf('o');
+			System.out.println("First occurrence of char 'o'" + " is found at : " + firstIndex);
+
+			substrtxt = pagetxt.substring(0, firstIndex).trim();
+			System.out.println(substrtxt);
+
+		} else {
+			throw new SkipException("Skipping there is no data available for pagination.");
+		}
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+		Thread.sleep(3000);
+		return substrtxt;
+
+	}
+
+	public AddVehiclePage clientclick() throws IOException, InterruptedException {
+		// TODO Auto-generated method stub
+
+		newclient.click();
+
+		Thread.sleep(1000);
+
+		return new AddVehiclePage();
 	}
 
 }

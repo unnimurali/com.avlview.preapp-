@@ -32,7 +32,7 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//input[@type='submit']")
 	WebElement signinBtn;
 
-	@FindBy(xpath = "//div[5]/span")
+	@FindBy(xpath = "//span[contains(text(),'Invalid')]")
 	WebElement Errormsg;
 
 	@FindBy(xpath = "//span[text()='Sign in']")
@@ -114,13 +114,16 @@ public class LoginPage extends TestBase {
 		username.sendKeys(uname);
 		password.sendKeys(pwd);
 		signinBtn.sendKeys(Keys.ENTER);
+		int count;
 
-		int count = driver.findElements(By.xpath("//span[2][contains(text(),'Clients')]")).size();
+		count = driver.findElements(By.xpath("//span[2][contains(text(),'Clients')]")).size();
 
 		System.out.println(count);
 
 		if (count == 0) {
+			// Assert.fail("login failed");
 			return null;
+
 		} else {
 			return new ClientsPage();
 		}

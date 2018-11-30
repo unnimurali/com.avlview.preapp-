@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterTest;
@@ -61,10 +64,23 @@ public class TestBase {
 		if (Browsername.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
+
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", prefs);
+			options.addArguments("--disable-extensions");
+			options.addArguments("--disable-infobars");
+
+			driver = new ChromeDriver(options);
+
+			// driver = new ChromeDriver();
 		} else if (Browsername.equals("FF")) {
 			System.setProperty("webdriver.geko.driver",
 					System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\geckodriver.exe");
+
 			driver = new FirefoxDriver();
 		}
 
@@ -102,6 +118,7 @@ public class TestBase {
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		// after execution, you could see a folder "FailedTestsScreenshots"
 		// under src folder
+
 		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
 				+ ".png";
 		File finalDestination = new File(destination);

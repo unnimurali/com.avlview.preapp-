@@ -86,6 +86,7 @@ public class NewTest1 {
 
 		boolean b = driver.findElement(By.xpath("//img[@id='clientimglogo1']")).isDisplayed();
 		Assert.assertTrue(b);
+
 	}
 
 	@AfterMethod
