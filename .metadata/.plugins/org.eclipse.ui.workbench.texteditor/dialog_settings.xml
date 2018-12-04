@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="action" key="selection"/>
+		<item value="validatemsg" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="validatemsg"/>
+			<item value="txt"/>
+			<item value="depends"/>
+			<item value="itemsperpage25"/>
+			<item value="ClientsPage"/>
+			<item value="failure"/>
+			<item value="endre"/>
+			<item value="Errormsg"/>
+			<item value="failed"/>
+			<item value="rows_table"/>
+			<item value="91"/>
+			<item value="uname1"/>
+			<item value="NewTest1"/>
+			<item value="New1"/>
 			<item value="action"/>
-			<item value="items"/>
-			<item value="Action"/>
-			<item value="search"/>
-			<item value="//*[@id=&apos;mat-input-0&apos;]"/>
-			<item value="searchcount"/>
-			<item value="AssertJUnit"/>
-			<item value="Assert"/>
-			<item value="onException"/>
-			<item value="sucessclient"/>
-			<item value="validationmsgpp"/>
-			<item value="validationmsgcmpny"/>
-			<item value="validationmsgmobile"/>
-			<item value="validationmsgemail"/>
-			<item value="validationmsgfn"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Assert"/>

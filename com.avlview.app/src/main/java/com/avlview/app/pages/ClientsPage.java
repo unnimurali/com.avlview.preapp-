@@ -38,6 +38,12 @@ public class ClientsPage extends TestBase {
 	@FindBy(xpath = "//span[1][@class='fnt-16 fl']")
 	WebElement searchcount;
 
+	@FindBy(xpath = "//i[@class='material-icons more_btn']")
+	WebElement topright;
+
+	@FindBy(xpath = "//span[contains(text(),'Settings')]")
+	WebElement settings;
+
 	public String validateClientspage() {
 		System.out.println(clients.getText());
 		return clients.getText();
@@ -102,6 +108,17 @@ public class ClientsPage extends TestBase {
 		addclient.click();
 
 		return new AddClientPage();
+	}
+
+	public SettingsPage settingsclick() throws IOException {
+
+		topright.click();
+
+		WebDriverWait wait = new WebDriverWait(driver, 60); // wait for 5 seconds
+		wait.until(ExpectedConditions.visibilityOf(settings));
+		settings.click();
+
+		return new SettingsPage();
 	}
 
 	public String validatesExistingclientearchresult() throws InterruptedException {
