@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.avlview.app.base.TestBase;
+import com.avlview.app.pages.AddTaxPage;
 import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.SettingsPage;
@@ -21,6 +22,7 @@ public class SettingsPageTest extends TestBase {
 	LoginPage lp;
 	ClientsPage cp;
 	SettingsPage sp;
+	AddTaxPage atp;
 
 	public SettingsPageTest() throws IOException {
 		super();
@@ -47,10 +49,10 @@ public class SettingsPageTest extends TestBase {
 		Assert.assertEquals(validatesettingspage, "Settings");
 	}
 
-	@Test(priority = 2, enabled = true)
+	@Test(priority = 2, enabled = false)
 	public void validatesettingspageTabsExistTest() {
 
-		boolean device;
+		boolean device = false;
 		boolean featuers = false;
 		boolean site = false;
 
@@ -68,32 +70,64 @@ public class SettingsPageTest extends TestBase {
 		device = sp.findItemInTheList(Constant.device);
 		softAssertion.assertTrue(device, "Device section not found");
 
+		sp.validateTabs();
 		featuers = sp.findItemInTheList(Constant.features);
 		softAssertion.assertTrue(featuers, "Feature section not found");
 
+		sp.validateTabs();
 		site = sp.findItemInTheList(Constant.site);
 		softAssertion.assertTrue(site, "Site section not found");
 
-		/*
-		 * for (String ls : person) { // iteration on the x list // iteration on each
-		 * intern list
-		 * 
-		 * if (ls.contains("DEVICE")) { // System.out.println("in device");
-		 * //softAssertion.assertEquals(ls., expected); device = true;
-		 * softAssertion.assertTrue(device); continue; // break; } else if
-		 * (ls.contains("FEATURES")) { // System.out.println("in FEATURES"); featuers =
-		 * true; softAssertion.assertTrue(featuers); continue; // break; } else if
-		 * (ls.contains("SITE")) { // System.out.println("in SITE"); site = true;
-		 * softAssertion.assertTrue(site); continue; // break; } else { if
-		 * (ls.contains("DEVICE") == false) { softAssertion.fail("Dev Not found");
-		 * continue; } if (ls.contains("FEATURES") == false) {
-		 * softAssertion.fail("feat Not found"); continue; } if (ls.contains("SITE") ==
-		 * false) { softAssertion.fail("site Not found"); continue; } }
-		 */
-		// }
+		softAssertion.assertAll();
+
+	}
+
+	@Test(priority = 3, enabled = false)
+	public void validatesettingspageSubTabsExistTest() {
+
+		boolean devices = false;
+		boolean product = false;
+		boolean taxes = false;
+		boolean logo = false;
+
+		SoftAssert softAssertion = new SoftAssert();
+
+		extentTest = extent.startTest("validatesettingspageSubTabsExistTest");
+
+		// ArrayList<String> person = sp.validateSubTabs(Constant.device);
+		// System.out.println(person);
+		// String dev = person.get(0);
+		// System.out.println(dev);
+		// String dev1 = person.get(0);
+		// System.out.println(dev1);
+		// softAssertion.assertEquals(dev, Constant.device, "Device section not found");
+
+		sp.validateSubTabs(Constant.device);
+		devices = sp.findSubtabItems(Constant.devices);
+		System.out.println(devices);
+		softAssertion.assertTrue(devices, "Devices section not found");
+
+		sp.validateSubTabs(Constant.features);
+		product = sp.findSubtabItems(Constant.product);
+		System.out.println(product);
+		softAssertion.assertTrue(product, "Product section not found");
+		taxes = sp.findSubtabItems(Constant.taxes);
+		System.out.println(taxes);
+		softAssertion.assertTrue(taxes, "Taxes section not found");
+
+		sp.validateSubTabs(Constant.site);
+		logo = sp.findSubtabItems(Constant.logo);
+		System.out.println(logo);
+		softAssertion.assertTrue(logo, "Logo section not found");
 
 		softAssertion.assertAll();
 
+	}
+
+	@Test(priority = 4, enabled = true)
+	public void taxclick() throws IOException {
+		extentTest = extent.startTest("taxclick");
+		atp = sp.taxClick();
 	}
 
 	@AfterMethod

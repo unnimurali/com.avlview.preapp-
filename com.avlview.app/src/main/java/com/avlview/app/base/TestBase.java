@@ -15,7 +15,6 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -127,24 +126,6 @@ public class TestBase {
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
-	}
-
-	public static boolean isElementPresent(WebElement element) {
-
-		try {
-			if (element.isDisplayed()) {
-
-				log.info("Finding an Element : " + element);
-
-			}
-
-		} catch (Throwable t) {
-
-			// capturing screenshot
-			log.info("Error while finding an Element : " + element + " Exception message : " + t.getMessage());
-			return false;
-		}
-		return true;
 	}
 
 }
