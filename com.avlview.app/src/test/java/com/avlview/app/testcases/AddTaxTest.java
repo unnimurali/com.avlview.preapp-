@@ -41,11 +41,25 @@ public class AddTaxTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void validateTaxpageExistTest() {
 		extentTest = extent.startTest("validateTaxpageExistTest");
 		String validatetaxspage = atp.validateTaxPage();
 		Assert.assertEquals(validatetaxspage, "Taxes");
+	}
+
+	@Test(priority = 2, enabled = false)
+	public void validateAddTaxExistTest() {
+		extentTest = extent.startTest("validateAddTaxExistTest");
+		String validateaddtaxspage = atp.validateAddTax();
+		Assert.assertEquals(validateaddtaxspage, "Add Tax");
+	}
+
+	@Test(priority = 2, enabled = true)
+	public void validateAddTaxTemplateExistTest() {
+		extentTest = extent.startTest("validateAddTaxTemplateExistTest");
+		String validatetaxstemplatepage = atp.validateAddTaxTemplate();
+		Assert.assertEquals(validatetaxstemplatepage, "You are yet to add tax information here!");
 	}
 
 	@AfterMethod
