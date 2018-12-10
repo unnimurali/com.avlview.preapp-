@@ -17,7 +17,7 @@ public class SettingsPage extends TestBase {
 
 	String items;
 	String name;
-	String items1;
+	String subitems;
 
 	public SettingsPage() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -184,9 +184,9 @@ public class SettingsPage extends TestBase {
 					System.out.println(sub_tabs_count);
 
 					for (int j = 1; j <= sub_tabs_count; j++) {
-						items1 = driver.findElement(By.xpath(before_xpath_device + j + after_xpath_device)).getText();
-						System.out.println(items1);
-						ar.add(items1);
+						subitems = driver.findElement(By.xpath(before_xpath_device + j + after_xpath_device)).getText();
+						System.out.println(subitems);
+						ar.add(subitems);
 
 					}
 
@@ -197,10 +197,10 @@ public class SettingsPage extends TestBase {
 					System.out.println(sub_tabs_count);
 
 					for (int j = 1; j <= sub_tabs_count; j++) {
-						items1 = driver.findElement(By.xpath(before_xpath_FEATURES + j + after_xpath_FEATURES))
+						subitems = driver.findElement(By.xpath(before_xpath_FEATURES + j + after_xpath_FEATURES))
 								.getText();
-						System.out.println(items1);
-						ar.add(items1);
+						System.out.println(subitems);
+						ar.add(subitems);
 
 					}
 
@@ -211,9 +211,9 @@ public class SettingsPage extends TestBase {
 					System.out.println(sub_tabs_count);
 
 					for (int j = 1; j <= sub_tabs_count; j++) {
-						items1 = driver.findElement(By.xpath(before_xpath_SITE + j + after_xpath_SITE)).getText();
-						System.out.println(items1);
-						ar.add(items1);
+						subitems = driver.findElement(By.xpath(before_xpath_SITE + j + after_xpath_SITE)).getText();
+						System.out.println(subitems);
+						ar.add(subitems);
 
 					}
 
@@ -239,9 +239,9 @@ public class SettingsPage extends TestBase {
 
 	}
 
-	public AddTaxPage taxClick() throws IOException {
+	public TaxListPage taxClick() throws IOException {
 		tax.click();
-		return new AddTaxPage();
+		return new TaxListPage();
 	}
 
 }

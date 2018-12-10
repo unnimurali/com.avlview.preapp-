@@ -1,5 +1,5 @@
 package com.avlview.app.pages;
 
-public class AddDevicePage {
+public class DeviceListPage {
 
 }
