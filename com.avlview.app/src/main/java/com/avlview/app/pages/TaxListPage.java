@@ -46,6 +46,9 @@ public class TaxListPage extends TestBase {
 	@FindBy(xpath = "//span[contains(text(),'Edit')]")
 	WebElement edit;
 
+	@FindBy(xpath = "//span[contains(text(),'Delete')]")
+	WebElement delete;
+
 	@FindBy(xpath = "//span[@class='md-subhead ng-star-inserted']")
 	WebElement updatetext;
 
@@ -60,6 +63,12 @@ public class TaxListPage extends TestBase {
 
 	@FindBy(xpath = "//span[@class='mat-button-wrapper'] [contains(text(),'Update')]")
 	WebElement updatebtn;
+
+	@FindBy(xpath = "//span[contains(text(),'Yes')]")
+	WebElement confirmdeletion;
+
+	@FindBy(xpath = "//span[contains(text(),'Save')]")
+	WebElement addtaxbtn;
 
 	public String validateTaxPage() {
 
@@ -181,8 +190,24 @@ public class TaxListPage extends TestBase {
 		taxdesc.sendKeys("GST");
 		taxamt.sendKeys("15");
 
-		updatebtn.click();
+		addtaxbtn.click();
 		Thread.sleep(2000);
+
+		JavaScriptUtil.scrollIntoView(validationmsg, driver);
+		JavaScriptUtil.drawBorder(validationmsg, driver);
+
+		return validationmsg.getText();
+		// System.out.println(validationmsg.getText());
+
+	}
+
+	public String validateDeleteTax() throws IOException, InterruptedException {
+
+		// wait = new WebDriverWait(driver, 60); // wait for 5 seconds
+		// wait.until(ExpectedConditions.visibilityOf(addtax));
+		icon.click();
+		delete.click();
+		confirmdeletion.click();
 
 		JavaScriptUtil.scrollIntoView(validationmsg, driver);
 		JavaScriptUtil.drawBorder(validationmsg, driver);
