@@ -100,6 +100,14 @@ public class TaxListPageTest extends TestBase {
 		Assert.assertEquals(validateemptytaxamt, "You just added a new tax type.");
 	}
 
+	@Test(priority = 9, enabled = true)
+	public void validateDeleteTax() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateDeleteTax");
+		// atp.validateEmptyTaxDesc();
+		String validatedlttxt = atp.validateDeleteTax();
+		Assert.assertEquals(validatedlttxt, "You just deleted a tax structure from records.");
+	}
+
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 
