@@ -1,5 +1,5 @@
 package com.avlview.app.testcases;
 
-public class ProductListPageTest {
+public class AddTaxPageTest {
 
 }

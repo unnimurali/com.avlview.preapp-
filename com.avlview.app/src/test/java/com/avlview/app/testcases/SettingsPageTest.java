@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.avlview.app.base.TestBase;
-import com.avlview.app.pages.AddTaxPage;
+import com.avlview.app.pages.TaxListPage;
 import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.SettingsPage;
@@ -22,7 +22,7 @@ public class SettingsPageTest extends TestBase {
 	LoginPage lp;
 	ClientsPage cp;
 	SettingsPage sp;
-	AddTaxPage atp;
+	TaxListPage atp;
 
 	public SettingsPageTest() throws IOException {
 		super();

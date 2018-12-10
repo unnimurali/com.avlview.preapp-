@@ -9,20 +9,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.avlview.app.base.TestBase;
-import com.avlview.app.pages.AddTaxPage;
 import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.SettingsPage;
+import com.avlview.app.pages.TaxListPage;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class AddTaxTest extends TestBase {
+public class TaxListPageTest extends TestBase {
 
 	LoginPage lp;
 	ClientsPage cp;
 	SettingsPage sp;
-	AddTaxPage atp;
+	TaxListPage atp;
 
-	public AddTaxTest() throws IOException {
+	public TaxListPageTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -52,14 +52,52 @@ public class AddTaxTest extends TestBase {
 	public void validateAddTaxExistTest() {
 		extentTest = extent.startTest("validateAddTaxExistTest");
 		String validateaddtaxspage = atp.validateAddTax();
-		Assert.assertEquals(validateaddtaxspage, "Add Tax");
+		Assert.assertEquals(validateaddtaxspage, "ADD TAX");
 	}
 
-	@Test(priority = 2, enabled = true)
-	public void validateAddTaxTemplateExistTest() {
+	@Test(priority = 3, enabled = false)
+	public void validateAddTaxTemplateExistTest() throws InterruptedException {
 		extentTest = extent.startTest("validateAddTaxTemplateExistTest");
 		String validatetaxstemplatepage = atp.validateAddTaxTemplate();
 		Assert.assertEquals(validatetaxstemplatepage, "You are yet to add tax information here!");
+	}
+
+	@Test(priority = 4, enabled = false)
+	public void validateBackButtonTest() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateBackButtonTest");
+		String validatebackbutton = atp.validateBackbutton();
+		Assert.assertEquals(validatebackbutton, "Settings");
+	}
+
+	@Test(priority = 5, enabled = false)
+	public void validateEditTest() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateEditTest");
+		String validateupdatescreen = atp.validateEditscreen();
+		Assert.assertEquals(validateupdatescreen, "Update Tax");
+	}
+
+	@Test(priority = 6, enabled = false)
+	public void validateEmptyTaxdesc() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateEmptyTaxdesc");
+		// atp.validateEmptyTaxDesc();
+		String validateemptytaxdesc = atp.validateEmptyTaxDesc();
+		Assert.assertEquals(validateemptytaxdesc, "You cannot leave tax description field empty.");
+	}
+
+	@Test(priority = 7, enabled = false)
+	public void validateEmptyTaxamount() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateEmptyTaxamount");
+		// atp.validateEmptyTaxDesc();
+		String validateemptytaxamt = atp.validateEmptyTaxamount();
+		Assert.assertEquals(validateemptytaxamt, "You missed to enter tax percentage value.");
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void validateAddTax() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateAddTax");
+		// atp.validateEmptyTaxDesc();
+		String validateemptytaxamt = atp.validateAddNewTax();
+		Assert.assertEquals(validateemptytaxamt, "You just added a new tax type.");
 	}
 
 	@AfterMethod

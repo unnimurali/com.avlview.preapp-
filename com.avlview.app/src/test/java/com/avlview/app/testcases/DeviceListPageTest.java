@@ -1,5 +1,5 @@
 package com.avlview.app.testcases;
 
-public class AddDeviceTest {
+public class DeviceListPageTest {
 
 }
