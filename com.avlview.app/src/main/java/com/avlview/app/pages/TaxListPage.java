@@ -1,7 +1,6 @@
 package com.avlview.app.pages;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +15,6 @@ import com.avlview.app.utilities.JavaScriptUtil;
 public class TaxListPage extends TestBase {
 
 	WebDriverWait wait;
-	ArrayList<String> ar = new ArrayList<String>();
 
 	public TaxListPage() throws IOException {
 		super();
@@ -61,14 +59,11 @@ public class TaxListPage extends TestBase {
 	@FindBy(xpath = "//div[@class='header_notification ng-star-inserted']/span")
 	WebElement validationmsg;
 
-	@FindBy(xpath = "//span[@class='mat-button-wrapper'] [contains(text(),'Update')]")
-	WebElement updatebtn;
-
 	@FindBy(xpath = "//span[contains(text(),'Yes')]")
 	WebElement confirmdeletion;
 
-	@FindBy(xpath = "//span[contains(text(),'Save')]")
-	WebElement addtaxbtn;
+	@FindBy(xpath = "//span[@class='mat-button-wrapper'] [contains(text(),'Update')]")
+	WebElement updatebtn;
 
 	public String validateTaxPage() {
 
@@ -94,7 +89,7 @@ public class TaxListPage extends TestBase {
 
 		// wait = new WebDriverWait(driver, 90); // wait for 5 seconds
 		// wait.until(ExpectedConditions.visibilityOf(taxcount));
-		Thread.sleep(2000);
+		Thread.sleep(2000);// Script wouldn't work if this statement removed
 		String a = taxcount.getText();
 		System.out.println(a);
 		int b = Integer.parseInt(a);
@@ -139,7 +134,7 @@ public class TaxListPage extends TestBase {
 
 	}
 
-	public String validateEmptyTaxDesc() throws IOException, InterruptedException {
+	public String validateEmptyTaxDescEdit() throws IOException, InterruptedException {
 
 		wait = new WebDriverWait(driver, 60); // wait for 5 seconds
 		wait.until(ExpectedConditions.visibilityOf(icon));
@@ -158,7 +153,7 @@ public class TaxListPage extends TestBase {
 		// System.out.println(validationmsg.getText());
 	}
 
-	public String validateEmptyTaxamount() throws IOException, InterruptedException {
+	public String validateEmptyTaxamountEdit() throws IOException, InterruptedException {
 
 		wait = new WebDriverWait(driver, 60); // wait for 5 seconds
 		wait.until(ExpectedConditions.visibilityOf(icon));
@@ -181,30 +176,26 @@ public class TaxListPage extends TestBase {
 
 	}
 
-	public String validateAddNewTax() throws IOException, InterruptedException {
+	public String validateEditTax() throws IOException, InterruptedException {
 
-		// wait = new WebDriverWait(driver, 60); // wait for 5 seconds
-		// wait.until(ExpectedConditions.visibilityOf(addtax));
-		addtax.click();
+		icon.click();
+		edit.click();
 
-		taxdesc.sendKeys("GST");
-		taxamt.sendKeys("15");
-
-		addtaxbtn.click();
+		taxamt.clear();
+		taxamt.sendKeys("12");
+		updatebtn.click();
 		Thread.sleep(2000);
 
 		JavaScriptUtil.scrollIntoView(validationmsg, driver);
 		JavaScriptUtil.drawBorder(validationmsg, driver);
 
 		return validationmsg.getText();
-		// System.out.println(validationmsg.getText());
+		// // System.out.println(validationmsg.getText());
 
 	}
 
 	public String validateDeleteTax() throws IOException, InterruptedException {
 
-		// wait = new WebDriverWait(driver, 60); // wait for 5 seconds
-		// wait.until(ExpectedConditions.visibilityOf(addtax));
 		icon.click();
 		delete.click();
 		confirmdeletion.click();
@@ -213,8 +204,13 @@ public class TaxListPage extends TestBase {
 		JavaScriptUtil.drawBorder(validationmsg, driver);
 
 		return validationmsg.getText();
-		// System.out.println(validationmsg.getText());
+		// // System.out.println(validationmsg.getText());
 
+	}
+
+	public AddTaxPage addTaxClick() throws IOException {
+		addtax.click();
+		return new AddTaxPage();
 	}
 
 }

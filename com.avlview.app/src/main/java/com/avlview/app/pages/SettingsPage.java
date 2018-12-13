@@ -43,6 +43,9 @@ public class SettingsPage extends TestBase {
 	@FindBy(xpath = "//a[contains(text(),'Taxes')]")
 	WebElement tax;
 
+	@FindBy(xpath = "//a[contains(text(),'Devices:')]")
+	WebElement devices;
+
 	// @FindBy(xpath = Constant.device)
 	// WebElement device;
 
@@ -242,6 +245,11 @@ public class SettingsPage extends TestBase {
 	public TaxListPage taxClick() throws IOException {
 		tax.click();
 		return new TaxListPage();
+	}
+
+	public DeviceListPage deviceClick() throws IOException {
+		devices.click();
+		return new DeviceListPage();
 	}
 
 }

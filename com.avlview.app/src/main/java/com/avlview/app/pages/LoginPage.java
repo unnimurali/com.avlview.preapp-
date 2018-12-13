@@ -116,7 +116,7 @@ public class LoginPage extends TestBase {
 		signinBtn.sendKeys(Keys.ENTER);
 		int count;
 
-		count = driver.findElements(By.xpath("//span[2][contains(text(),'Clients')]")).size();
+		count = driver.findElements(By.xpath("//span[2][contains(text(),'Client')]")).size();
 
 		System.out.println(count);
 
