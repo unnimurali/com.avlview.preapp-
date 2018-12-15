@@ -46,6 +46,9 @@ public class SettingsPage extends TestBase {
 	@FindBy(xpath = "//a[contains(text(),'Devices:')]")
 	WebElement devices;
 
+	@FindBy(xpath = "//a[contains(text(),'Product:')]")
+	WebElement product;
+
 	// @FindBy(xpath = Constant.device)
 	// WebElement device;
 
@@ -250,6 +253,11 @@ public class SettingsPage extends TestBase {
 	public DeviceListPage deviceClick() throws IOException {
 		devices.click();
 		return new DeviceListPage();
+	}
+
+	public ProductListPage ProductClick() throws IOException {
+		product.click();
+		return new ProductListPage();
 	}
 
 }
