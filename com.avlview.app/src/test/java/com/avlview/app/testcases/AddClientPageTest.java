@@ -48,7 +48,7 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void TemplateTest() throws IOException, InterruptedException {
 
 		extentTest = extent.startTest("TemplateTest");
@@ -60,7 +60,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "0");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void ClickAddClientTest() throws IOException {
 
 		extentTest = extent.startTest("ClickAddClientTest");
@@ -76,7 +76,7 @@ public class AddClientPageTest extends TestBase {
 	 * ac.addclient(); }
 	 */
 
-	@Test(priority = 3, enabled = false, dataProvider = "getData")
+	@Test(priority = 3, enabled = true, dataProvider = "getData")
 	public void AddclientTest(Hashtable<String, String> data) throws IOException, InterruptedException, AWTException {
 
 		extentTest = extent.startTest("AddclientTest");
@@ -96,7 +96,7 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void SearchAddedClientTest() throws IOException, InterruptedException, AWTException {
 		extentTest = extent.startTest("SearchAddedClientTest");
 		// ac=cp.addclientclick();
@@ -104,7 +104,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "1");
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void deActivateClientTest() throws IOException, InterruptedException, AWTException {
 		extentTest = extent.startTest("deActivateClientTest");
 		// ac=cp.addclientclick();
@@ -112,7 +112,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "0");
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void deactivateSearchTest() throws InterruptedException {
 
 		extentTest = extent.startTest("deactivateSearchTest");

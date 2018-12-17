@@ -4,21 +4,47 @@
 
 	<listeners>
 
-
-<!-- 		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" /> -->
+		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" />
 		<listener class-name="com.avlview.Analyzer.MyTransformer" />
 
 
 	</listeners>
 
 
-	<test thread-count="5" name="Test">
+	<test name="Login Page Test">
 		<classes>
 			<class name="com.avlview.app.testcases.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="ForgotPasswordPageTest">
+		<classes>
 			<class name="com.avlview.app.testcases.ForgotPasswordPageTest" />
+		</classes>
+	</test>
+
+	<test name="ClientsPageTest">
+		<classes>
 			<class name="com.avlview.app.testcases.ClientsPageTest" />
+		</classes>
+	</test>
+
+	<test name="AddClientPageTest">
+		<classes>
 			<class name="com.avlview.app.testcases.AddClientPageTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
+
+	<test name="AddVehicleTest">
+		<classes>
+			<class name="com.avlview.app.testcases.AddVehicleTest" />
+		</classes>
+	</test>
+
+
+
+
+
+
 </suite> <!-- Suite -->
   

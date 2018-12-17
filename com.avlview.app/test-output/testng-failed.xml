@@ -5,7 +5,7 @@
     <classes>
       <class name="com.avlview.app.testcases.AddProductPageTest">
         <methods>
-          <include name="validateAddProduct"/>
+          <include name="SearchAddedProductTest"/>
           <include name="setExtent"/>
           <include name="endReport"/>
           <include name="teardown"/>

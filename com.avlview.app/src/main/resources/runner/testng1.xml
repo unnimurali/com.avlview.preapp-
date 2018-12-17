@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+
+		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" />
+		<listener class-name="com.avlview.Analyzer.MyTransformer" />
+
+
+	</listeners>
+
+
+	<test name="Login Page Test">
+		<classes>
+			<class name="com.avlview.app.testcases.LoginPageTest" />
+			<class name="com.avlview.app.testcases.ForgotPasswordPageTest" />
+		</classes>
+	</test>
+
+
+
+
+
+
+
+</suite> <!-- Suite -->
+  

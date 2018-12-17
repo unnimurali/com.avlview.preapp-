@@ -46,7 +46,7 @@ public class AddTaxPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validateAddTax() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateAddTax");
 		atp = tlp.addTaxClick();
@@ -54,7 +54,7 @@ public class AddTaxPageTest extends TestBase {
 		Assert.assertEquals(validateadddevice, "Add Tax");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void validateEmptyTaxdesc() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateEmptyTaxdesc");
 		atp = tlp.addTaxClick();
@@ -62,7 +62,7 @@ public class AddTaxPageTest extends TestBase {
 		Assert.assertEquals(validateemptytaxdesc, "You cannot leave tax description field empty.");
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void validateEmptyTaxamount() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateEmptyTaxamount");
 		atp = tlp.addTaxClick();
@@ -80,7 +80,7 @@ public class AddTaxPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void validateUpdatepopupTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateUpdatepopupTest");
 
@@ -88,7 +88,7 @@ public class AddTaxPageTest extends TestBase {
 		Assert.assertEquals(validateupdatescreen, "Update Tax");
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void validateEmptyTaxdescEdit() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateEmptyTaxdescEdit");
 		// tlp.validateEmptyTaxDesc();
@@ -96,7 +96,7 @@ public class AddTaxPageTest extends TestBase {
 		Assert.assertEquals(validateemptytaxdesc, "You cannot leave tax description field empty.");
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void validateEmptyTaxamountEdit() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateEmptyTaxamountEdit");
 		// tlp.validateEmptyTaxDesc();
@@ -112,7 +112,7 @@ public class AddTaxPageTest extends TestBase {
 		Assert.assertEquals(validateedttxt, "Changes made to the product have been saved.");
 	}
 
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 9, enabled = true)
 	public void validateDeleteTax() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateDeleteTax");
 		// tlp.validateEmptyTaxDesc();

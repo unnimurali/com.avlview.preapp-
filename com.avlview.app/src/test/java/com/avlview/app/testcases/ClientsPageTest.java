@@ -69,7 +69,7 @@ public class ClientsPageTest extends TestBase {
 	public void validateTotalTabsTest() throws InterruptedException {
 		extentTest = extent.startTest("validateTotalTabsTest");
 		int validateTabcount = cp.validatetotaltabs();
-		Assert.assertEquals(validateTabcount, 3);
+		Assert.assertEquals(validateTabcount, 2);
 
 	}
 

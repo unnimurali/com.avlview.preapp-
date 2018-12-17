@@ -55,7 +55,7 @@ public class AddProductPageTest extends TestBase {
 		Assert.assertEquals(validateaddproduct, "Add Product");
 	}
 
-	@Test(priority = 2, enabled = true, dataProvider = "getData")
+	@Test(priority = 2, enabled = false, dataProvider = "getData")
 	public void AddProductTest(Hashtable<String, String> data) throws IOException, InterruptedException, AWTException {
 
 		extentTest = extent.startTest("AddProductTest");
@@ -64,13 +64,13 @@ public class AddProductPageTest extends TestBase {
 		// System.out.println(data.get("isd").substring(0, 2));
 
 		app.addProduct(data.get("Productname"), data.get("Productdescription"), data.get("Plan"), data.get("Rate"),
-				data.get("Tax"), data.get("validation"));
+				data.get("Tax"), data.get("Validation"));
 
 		String validatefnmsg = app.validatemsg();
 		System.out.println(validatefnmsg);
 
-		System.out.println(data.get("validation"));
-		Assert.assertEquals(validatefnmsg, data.get("validation"));
+		System.out.println(data.get("Validation"));
+		Assert.assertEquals(validatefnmsg, data.get("Validation"));
 
 	}
 

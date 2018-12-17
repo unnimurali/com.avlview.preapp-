@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.avlview.app.base.TestBase;
-import com.avlview.app.pages.TaxListPage;
 import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.SettingsPage;
+import com.avlview.app.pages.TaxListPage;
 import com.avlview.app.utilities.Constant;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -42,14 +42,14 @@ public class SettingsPageTest extends TestBase {
 		// av=ac.clientclick();
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validatesettingspageExistTest() {
 		extentTest = extent.startTest("validatesettingspageExistTest");
 		String validatesettingspage = sp.validateSettingsPage();
 		Assert.assertEquals(validatesettingspage, "Settings");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void validatesettingspageTabsExistTest() {
 
 		boolean device = false;
@@ -82,7 +82,7 @@ public class SettingsPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void validatesettingspageSubTabsExistTest() {
 
 		boolean devices = false;
@@ -124,7 +124,6 @@ public class SettingsPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 4, enabled = true)
 	public void taxclick() throws IOException {
 		extentTest = extent.startTest("taxclick");
 		atp = sp.taxClick();

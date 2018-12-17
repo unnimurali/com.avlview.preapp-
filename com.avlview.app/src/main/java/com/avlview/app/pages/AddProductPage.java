@@ -27,7 +27,7 @@ public class AddProductPage extends TestBase {
 	@FindBy(xpath = "//textarea[@placeholder='Pro Plan on 12 months payment plan.']")
 	WebElement productdescription;
 
-	@FindBy(xpath = "//span[contains(text(),'Choose%')]")
+	@FindBy(xpath = "//span[contains(text(),'Choose')]")
 	WebElement plan;
 
 	@FindBy(xpath = "//input[@name='rate']")
@@ -70,13 +70,18 @@ public class AddProductPage extends TestBase {
 	public void addProduct(String ProductName, String ProductDescription, String Plan, String Rate, String Tax,
 			String Validation) throws InterruptedException {
 
+		productname.clear();
 		productname.sendKeys(ProductName);
+		productdescription.clear();
 		productdescription.sendKeys(ProductDescription);
 
-		plan.click();
-		WebElement ele = driver.findElement(By.xpath("//span[contains(text(),'" + Plan + "')]"));
-		ele.click();
+		if (Plan != "") {
+			plan.click();
+			WebElement ele = driver.findElement(By.xpath("//span[contains(text(),'" + Plan + "')]"));
+			ele.click();
+		}
 
+		rate.clear();
 		rate.sendKeys(Rate);
 
 		if (Tax != "") {

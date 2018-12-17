@@ -5,17 +5,17 @@
     <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG"/>
     <listener class-name="com.avlview.Analyzer.MyTransformer"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Login Page Test(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.LoginPageTest">
+      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
         <methods>
+          <include name="setExtent"/>
+          <include name="validateForgotPasswordPageExistTest"/>
+          <include name="endReport"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="setExtent"/>
-          <include name="endReport"/>
-          <include name="loginclick"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.LoginPageTest -->
+      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Login Page Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

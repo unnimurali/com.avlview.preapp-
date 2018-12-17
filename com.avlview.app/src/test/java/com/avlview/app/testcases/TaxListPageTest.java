@@ -41,35 +41,35 @@ public class TaxListPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validateTaxpageExistTest() {
 		extentTest = extent.startTest("validateTaxpageExistTest");
 		String validatetaxspage = tlp.validateTaxPage();
 		Assert.assertEquals(validatetaxspage, "Taxes");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void validateAddTaxExistTest() {
 		extentTest = extent.startTest("validateAddTaxExistTest");
 		String validateaddtaxspage = tlp.validateAddTax();
 		Assert.assertEquals(validateaddtaxspage, "ADD TAX");
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void validateAddTaxTemplateExistTest() throws InterruptedException {
 		extentTest = extent.startTest("validateAddTaxTemplateExistTest");
 		String validatetaxstemplatepage = tlp.validateAddTaxTemplate();
 		Assert.assertEquals(validatetaxstemplatepage, "You are yet to add tax information here!");
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void validateBackButtonTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateBackButtonTest");
 		String validatebackbutton = tlp.validateBackbutton();
 		Assert.assertEquals(validatebackbutton, "Settings");
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void validateEditTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateEditTest");
 		String validateupdatescreen = tlp.validateEditscreen();
