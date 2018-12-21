@@ -5,17 +5,76 @@
     <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG"/>
     <listener class-name="com.avlview.Analyzer.MyTransformer"/>
   </listeners>
-  <test thread-count="5" name="Login Page Test(failed)">
+  <test thread-count="5" name="SettingsPageTest(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
+      <class name="com.avlview.app.testcases.SettingsPageTest">
+        <methods>
+          <include name="validatesettingspageTabsExistTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="validatesettingspageSubTabsExistTest"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.SettingsPageTest -->
+    </classes>
+  </test> <!-- SettingsPageTest(failed) -->
+  <test thread-count="5" name="TaxListPageTest(failed)">
+    <classes>
+      <class name="com.avlview.app.testcases.TaxListPageTest">
         <methods>
           <include name="setExtent"/>
-          <include name="validateForgotPasswordPageExistTest"/>
+          <include name="validateAddTaxTemplateExistTest"/>
           <include name="endReport"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
+      </class> <!-- com.avlview.app.testcases.TaxListPageTest -->
     </classes>
-  </test> <!-- Login Page Test(failed) -->
+  </test> <!-- TaxListPageTest(failed) -->
+  <test thread-count="5" name="AddTaxPageTest(failed)">
+    <classes>
+      <class name="com.avlview.app.testcases.AddTaxPageTest">
+        <methods>
+          <include name="validateEmptyTaxamountEdit"/>
+          <include name="setup"/>
+          <include name="validateDeleteTax"/>
+          <include name="teardown"/>
+          <include name="validateEmptyTaxdescEdit"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="validateEditTax"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.AddTaxPageTest -->
+    </classes>
+  </test> <!-- AddTaxPageTest(failed) -->
+  <test thread-count="5" name="ProductListPageTest(failed)">
+    <classes>
+      <class name="com.avlview.app.testcases.ProductListPageTest">
+        <methods>
+          <include name="validateDeleteProduct"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="endReport"/>
+          <include name="validateAddProductTemplateExistTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.ProductListPageTest -->
+    </classes>
+  </test> <!-- ProductListPageTest(failed) -->
+  <test thread-count="5" name="AddProductPageTest(failed)">
+    <classes>
+      <class name="com.avlview.app.testcases.AddProductPageTest">
+        <methods>
+          <include name="validateAddProduct"/>
+          <include name="AddProductTest"/>
+          <include name="SearchAddedProductTest"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.AddProductPageTest -->
+    </classes>
+  </test> <!-- AddProductPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

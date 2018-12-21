@@ -83,6 +83,14 @@ public class ProductListPageTest extends TestBase {
 		Assert.assertTrue(validateSearch);
 	}
 
+	@Test(priority = 7, enabled = true)
+	public void validateDeleteProduct() throws InterruptedException, IOException {
+		extentTest = extent.startTest("validateDeleteProduct");
+		// tlp.validateEmptyTaxDesc();
+		String validatedlttxt = plp.validateDeleteTax();
+		Assert.assertEquals(validatedlttxt, "You just deleted a product from records.");
+	}
+
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 

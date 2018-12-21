@@ -19,8 +19,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import com.avlview.app.utilities.ExcelReader;
 import com.avlview.app.utilities.TestUtil;
@@ -99,7 +99,7 @@ public class TestBase {
 
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void setExtent() {
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
 		extent.addSystemInfo("Host Name", "Murali");
@@ -108,7 +108,7 @@ public class TestBase {
 
 	}
 
-	@AfterTest
+	@AfterClass
 	public void endReport() {
 		extent.flush();
 		extent.close();

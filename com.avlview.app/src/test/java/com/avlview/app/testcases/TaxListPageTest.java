@@ -69,7 +69,7 @@ public class TaxListPageTest extends TestBase {
 		Assert.assertEquals(validatebackbutton, "Settings");
 	}
 
-	@Test(priority = 5, enabled = true)
+	@Test(priority = 5, enabled = false)
 	public void validateEditTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateEditTest");
 		String validateupdatescreen = tlp.validateEditscreen();

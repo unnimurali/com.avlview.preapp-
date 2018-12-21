@@ -1,34 +1,378 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
+<testng-results skipped="17" failed="6" ignored="1" total="55" passed="31">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44769" started-at="2018-12-17T10:56:32Z" finished-at="2018-12-17T10:57:17Z">
+  <suite name="Suite" duration-ms="1069055" started-at="2018-12-21T07:38:38Z" finished-at="2018-12-21T07:56:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44769" started-at="2018-12-17T10:56:32Z" finished-at="2018-12-17T10:57:17Z">
-      <class name="com.avlview.app.testcases.AddProductPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@158b42f]" name="setExtent" is-config="true" duration-ms="949" started-at="2018-12-17T10:56:32Z" finished-at="2018-12-17T10:56:33Z">
+    <test name="Login Page Test" duration-ms="135073" started-at="2018-12-21T07:38:38Z" finished-at="2018-12-21T07:40:53Z">
+      <class name="com.avlview.app.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setExtent" is-config="true" duration-ms="1680" started-at="2018-12-21T07:38:38Z" finished-at="2018-12-21T07:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@158b42f]" name="setup" is-config="true" duration-ms="32310" started-at="2018-12-17T10:56:33Z" finished-at="2018-12-17T10:57:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="27856" started-at="2018-12-21T07:38:40Z" finished-at="2018-12-21T07:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="SearchAddedProductTest()[pri:3, instance:com.avlview.app.testcases.AddProductPageTest@158b42f]" name="SearchAddedProductTest" duration-ms="9210" started-at="2018-12-17T10:57:05Z" finished-at="2018-12-17T10:57:15Z">
+        <test-method status="PASS" signature="validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="validateLoginPageExistTest" duration-ms="1269" started-at="2018-12-21T07:39:07Z" finished-at="2018-12-21T07:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1379" started-at="2018-12-21T07:39:09Z" finished-at="2018-12-21T07:39:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLoginPageExistTest status=SUCCESS method=LoginPageTest.validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="10303" started-at="2018-12-21T07:39:10Z" finished-at="2018-12-21T07:39:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="validateClientLogoExistTest" duration-ms="1910" started-at="2018-12-21T07:39:20Z" finished-at="2018-12-21T07:39:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClientLogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1034" started-at="2018-12-21T07:39:22Z" finished-at="2018-12-21T07:39:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateClientLogoExistTest status=SUCCESS method=LoginPageTest.validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="10388" started-at="2018-12-21T07:39:23Z" finished-at="2018-12-21T07:39:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="validateApplogoExistTest" duration-ms="1422" started-at="2018-12-21T07:39:34Z" finished-at="2018-12-21T07:39:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1342" started-at="2018-12-21T07:39:35Z" finished-at="2018-12-21T07:39:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateApplogoExistTest status=SUCCESS method=LoginPageTest.validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="9913" started-at="2018-12-21T07:39:36Z" finished-at="2018-12-21T07:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateRemembermeExistTest()[pri:4, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="validateRemembermeExistTest" duration-ms="1306" started-at="2018-12-21T07:39:46Z" finished-at="2018-12-21T07:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRemembermeExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1193" started-at="2018-12-21T07:39:48Z" finished-at="2018-12-21T07:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateRemembermeExistTest status=SUCCESS method=LoginPageTest.validateRemembermeExistTest()[pri:4, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="9910" started-at="2018-12-21T07:39:49Z" finished-at="2018-12-21T07:39:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateLanguageExistTest()[pri:5, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="validateLanguageExistTest" duration-ms="1249" started-at="2018-12-21T07:39:59Z" finished-at="2018-12-21T07:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLanguageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="857" started-at="2018-12-21T07:40:00Z" finished-at="2018-12-21T07:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLanguageExistTest status=SUCCESS method=LoginPageTest.validateLanguageExistTest()[pri:5, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="9692" started-at="2018-12-21T07:40:01Z" finished-at="2018-12-21T07:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="forgotpasswordclick()[pri:6, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="forgotpasswordclick" duration-ms="8171" started-at="2018-12-21T07:40:11Z" finished-at="2018-12-21T07:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpasswordclick -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1036" started-at="2018-12-21T07:40:19Z" finished-at="2018-12-21T07:40:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgotpasswordclick status=SUCCESS method=LoginPageTest.forgotpasswordclick()[pri:6, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="10006" started-at="2018-12-21T07:40:20Z" finished-at="2018-12-21T07:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginclickWithInvaliduser()[pri:7, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="loginclickWithInvaliduser" duration-ms="2088" started-at="2018-12-21T07:40:30Z" finished-at="2018-12-21T07:40:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginclickWithInvaliduser -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1068" started-at="2018-12-21T07:40:32Z" finished-at="2018-12-21T07:40:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginclickWithInvaliduser status=SUCCESS method=LoginPageTest.loginclickWithInvaliduser()[pri:7, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="setup" is-config="true" duration-ms="9160" started-at="2018-12-21T07:40:33Z" finished-at="2018-12-21T07:40:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginclick()[pri:8, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="loginclick" duration-ms="8198" started-at="2018-12-21T07:40:42Z" finished-at="2018-12-21T07:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginclick -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="teardown" is-config="true" duration-ms="1156" started-at="2018-12-21T07:40:50Z" finished-at="2018-12-21T07:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginclick status=SUCCESS method=LoginPageTest.loginclick()[pri:8, instance:com.avlview.app.testcases.LoginPageTest@64cb25] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.LoginPageTest@64cb25]" name="endReport" is-config="true" duration-ms="1336" started-at="2018-12-21T07:40:51Z" finished-at="2018-12-21T07:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+    <test name="ForgotPasswordPageTest" duration-ms="172297" started-at="2018-12-21T07:40:53Z" finished-at="2018-12-21T07:43:45Z">
+      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setExtent" is-config="true" duration-ms="4" started-at="2018-12-21T07:40:53Z" finished-at="2018-12-21T07:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="8723" started-at="2018-12-21T07:40:53Z" finished-at="2018-12-21T07:41:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateForgotPasswordPageExistTest()[pri:1, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateForgotPasswordPageExistTest" duration-ms="25889" started-at="2018-12-21T07:41:02Z" finished-at="2018-12-21T07:41:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateForgotPasswordPageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="1001" started-at="2018-12-21T07:41:28Z" finished-at="2018-12-21T07:41:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateForgotPasswordPageExistTest status=SUCCESS method=ForgotPasswordPageTest.validateForgotPasswordPageExistTest()[pri:1, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="11393" started-at="2018-12-21T07:41:29Z" finished-at="2018-12-21T07:41:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateClientLogoExistTest" duration-ms="2598" started-at="2018-12-21T07:41:40Z" finished-at="2018-12-21T07:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClientLogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="988" started-at="2018-12-21T07:41:43Z" finished-at="2018-12-21T07:41:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateClientLogoExistTest status=SUCCESS method=ForgotPasswordPageTest.validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="12078" started-at="2018-12-21T07:41:44Z" finished-at="2018-12-21T07:41:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateApplogoExistTest" duration-ms="1945" started-at="2018-12-21T07:41:56Z" finished-at="2018-12-21T07:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="1068" started-at="2018-12-21T07:41:58Z" finished-at="2018-12-21T07:41:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateApplogoExistTest status=SUCCESS method=ForgotPasswordPageTest.validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="12149" started-at="2018-12-21T07:41:59Z" finished-at="2018-12-21T07:42:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateBacktoLoginExistTest()[pri:4, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateBacktoLoginExistTest" duration-ms="13087" started-at="2018-12-21T07:42:11Z" finished-at="2018-12-21T07:42:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBacktoLoginExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="1211" started-at="2018-12-21T07:42:24Z" finished-at="2018-12-21T07:42:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateBacktoLoginExistTest status=SUCCESS method=ForgotPasswordPageTest.validateBacktoLoginExistTest()[pri:4, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="9250" started-at="2018-12-21T07:42:25Z" finished-at="2018-12-21T07:42:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateBacktoLoginClickTest()[pri:5, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateBacktoLoginClickTest" duration-ms="7496" started-at="2018-12-21T07:42:35Z" finished-at="2018-12-21T07:42:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBacktoLoginClickTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="1109" started-at="2018-12-21T07:42:42Z" finished-at="2018-12-21T07:42:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateBacktoLoginClickTest status=SUCCESS method=ForgotPasswordPageTest.validateBacktoLoginClickTest()[pri:5, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="9427" started-at="2018-12-21T07:42:43Z" finished-at="2018-12-21T07:42:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateNouserClickTest()[pri:6, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateNouserClickTest" duration-ms="8804" started-at="2018-12-21T07:42:53Z" finished-at="2018-12-21T07:43:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNouserClickTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="977" started-at="2018-12-21T07:43:01Z" finished-at="2018-12-21T07:43:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateNouserClickTest status=SUCCESS method=ForgotPasswordPageTest.validateNouserClickTest()[pri:6, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="9403" started-at="2018-12-21T07:43:02Z" finished-at="2018-12-21T07:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateInvaliduserClickTest()[pri:7, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateInvaliduserClickTest" duration-ms="9387" started-at="2018-12-21T07:43:12Z" finished-at="2018-12-21T07:43:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvaliduserClickTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="1087" started-at="2018-12-21T07:43:21Z" finished-at="2018-12-21T07:43:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateInvaliduserClickTest status=SUCCESS method=ForgotPasswordPageTest.validateInvaliduserClickTest()[pri:7, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="setup" is-config="true" duration-ms="9713" started-at="2018-12-21T07:43:22Z" finished-at="2018-12-21T07:43:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateValiduserClickTest()[pri:8, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="validateValiduserClickTest" duration-ms="11800" started-at="2018-12-21T07:43:32Z" finished-at="2018-12-21T07:43:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValiduserClickTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="teardown" is-config="true" duration-ms="1452" started-at="2018-12-21T07:43:44Z" finished-at="2018-12-21T07:43:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateValiduserClickTest status=SUCCESS method=ForgotPasswordPageTest.validateValiduserClickTest()[pri:8, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.ForgotPasswordPageTest@1399530]" name="endReport" is-config="true" duration-ms="235" started-at="2018-12-21T07:43:45Z" finished-at="2018-12-21T07:43:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
+    </test> <!-- ForgotPasswordPageTest -->
+    <test name="SettingsPageTest" duration-ms="126046" started-at="2018-12-21T07:43:46Z" finished-at="2018-12-21T07:45:52Z">
+      <class name="com.avlview.app.testcases.SettingsPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="setExtent" is-config="true" duration-ms="7" started-at="2018-12-21T07:43:46Z" finished-at="2018-12-21T07:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="setup" is-config="true" duration-ms="20631" started-at="2018-12-21T07:43:46Z" finished-at="2018-12-21T07:44:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatesettingspageExistTest()[pri:1, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="validatesettingspageExistTest" duration-ms="697" started-at="2018-12-21T07:44:06Z" finished-at="2018-12-21T07:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesettingspageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="teardown" is-config="true" duration-ms="1622" started-at="2018-12-21T07:44:07Z" finished-at="2018-12-21T07:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatesettingspageExistTest status=SUCCESS method=SettingsPageTest.validatesettingspageExistTest()[pri:1, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="setup" is-config="true" duration-ms="24455" started-at="2018-12-21T07:44:09Z" finished-at="2018-12-21T07:44:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validatesettingspageTabsExistTest()[pri:2, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="validatesettingspageTabsExistTest" duration-ms="1117" started-at="2018-12-21T07:44:33Z" finished-at="2018-12-21T07:44:34Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [1] but found [8]]]>
+              <![CDATA[The following asserts failed:
+Site section not found expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1] but found [8]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.avlview.app.testcases.AddProductPageTest.SearchAddedProductTest(AddProductPageTest.java:82)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Site section not found expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.avlview.app.testcases.SettingsPageTest.validatesettingspageTabsExistTest(SettingsPageTest.java:81)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,23 +403,1648 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchAddedProductTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@158b42f]" name="teardown" is-config="true" duration-ms="1613" started-at="2018-12-17T10:57:15Z" finished-at="2018-12-17T10:57:16Z">
+        </test-method> <!-- validatesettingspageTabsExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="teardown" is-config="true" duration-ms="1050" started-at="2018-12-21T07:44:34Z" finished-at="2018-12-21T07:44:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchAddedProductTest status=FAILURE method=AddProductPageTest.SearchAddedProductTest()[pri:3, instance:com.avlview.app.testcases.AddProductPageTest@158b42f] output={null}]]]>
+                <![CDATA[[TestResult name=validatesettingspageTabsExistTest status=SKIP method=SettingsPageTest.validatesettingspageTabsExistTest()[pri:2, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@158b42f]" name="endReport" is-config="true" duration-ms="643" started-at="2018-12-17T10:57:16Z" finished-at="2018-12-17T10:57:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="setup" is-config="true" duration-ms="23909" started-at="2018-12-21T07:44:35Z" finished-at="2018-12-21T07:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validatesettingspageTabsExistTest()[pri:2, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="validatesettingspageTabsExistTest" duration-ms="814" started-at="2018-12-21T07:44:59Z" finished-at="2018-12-21T07:45:00Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Site section not found expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Site section not found expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.avlview.app.testcases.SettingsPageTest.validatesettingspageTabsExistTest(SettingsPageTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesettingspageTabsExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="teardown" is-config="true" duration-ms="1858" started-at="2018-12-21T07:45:00Z" finished-at="2018-12-21T07:45:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatesettingspageTabsExistTest status=FAILURE method=SettingsPageTest.validatesettingspageTabsExistTest()[pri:2, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="setup" is-config="true" duration-ms="21121" started-at="2018-12-21T07:45:02Z" finished-at="2018-12-21T07:45:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validatesettingspageSubTabsExistTest()[pri:3, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="validatesettingspageSubTabsExistTest" duration-ms="1327" started-at="2018-12-21T07:45:23Z" finished-at="2018-12-21T07:45:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Logo section not found expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Logo section not found expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.avlview.app.testcases.SettingsPageTest.validatesettingspageSubTabsExistTest(SettingsPageTest.java:123)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesettingspageSubTabsExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="teardown" is-config="true" duration-ms="1041" started-at="2018-12-21T07:45:24Z" finished-at="2018-12-21T07:45:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatesettingspageSubTabsExistTest status=SKIP method=SettingsPageTest.validatesettingspageSubTabsExistTest()[pri:3, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="setup" is-config="true" duration-ms="23624" started-at="2018-12-21T07:45:26Z" finished-at="2018-12-21T07:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validatesettingspageSubTabsExistTest()[pri:3, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="validatesettingspageSubTabsExistTest" duration-ms="1133" started-at="2018-12-21T07:45:49Z" finished-at="2018-12-21T07:45:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Logo section not found expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Logo section not found expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.avlview.app.testcases.SettingsPageTest.validatesettingspageSubTabsExistTest(SettingsPageTest.java:123)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesettingspageSubTabsExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="teardown" is-config="true" duration-ms="1433" started-at="2018-12-21T07:45:50Z" finished-at="2018-12-21T07:45:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatesettingspageSubTabsExistTest status=FAILURE method=SettingsPageTest.validatesettingspageSubTabsExistTest()[pri:3, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.SettingsPageTest@1f7ca37]" name="endReport" is-config="true" duration-ms="168" started-at="2018-12-21T07:45:52Z" finished-at="2018-12-21T07:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.avlview.app.testcases.SettingsPageTest -->
+    </test> <!-- SettingsPageTest -->
+    <test name="TaxListPageTest" duration-ms="92485" started-at="2018-12-21T07:45:52Z" finished-at="2018-12-21T07:47:24Z">
+      <class name="com.avlview.app.testcases.TaxListPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="setExtent" is-config="true" duration-ms="7" started-at="2018-12-21T07:45:52Z" finished-at="2018-12-21T07:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="setup" is-config="true" duration-ms="18523" started-at="2018-12-21T07:45:52Z" finished-at="2018-12-21T07:46:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateTaxpageExistTest()[pri:1, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="validateTaxpageExistTest" duration-ms="1096" started-at="2018-12-21T07:46:11Z" finished-at="2018-12-21T07:46:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTaxpageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="teardown" is-config="true" duration-ms="1020" started-at="2018-12-21T07:46:12Z" finished-at="2018-12-21T07:46:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTaxpageExistTest status=SUCCESS method=TaxListPageTest.validateTaxpageExistTest()[pri:1, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="setup" is-config="true" duration-ms="24340" started-at="2018-12-21T07:46:13Z" finished-at="2018-12-21T07:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAddTaxExistTest()[pri:2, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="validateAddTaxExistTest" duration-ms="1249" started-at="2018-12-21T07:46:37Z" finished-at="2018-12-21T07:46:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddTaxExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="teardown" is-config="true" duration-ms="1099" started-at="2018-12-21T07:46:38Z" finished-at="2018-12-21T07:46:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddTaxExistTest status=SUCCESS method=TaxListPageTest.validateAddTaxExistTest()[pri:2, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="setup" is-config="true" duration-ms="19359" started-at="2018-12-21T07:46:39Z" finished-at="2018-12-21T07:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateAddTaxTemplateExistTest()[pri:3, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="validateAddTaxTemplateExistTest" duration-ms="2083" started-at="2018-12-21T07:46:59Z" finished-at="2018-12-21T07:47:01Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Tax data's are avaialble so skipping the testcase.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Tax data's are avaialble so skipping the testcase.
+at com.avlview.app.pages.TaxListPage.validateAddTaxTemplate(TaxListPage.java:104)
+at com.avlview.app.testcases.TaxListPageTest.validateAddTaxTemplateExistTest(TaxListPageTest.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddTaxTemplateExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="teardown" is-config="true" duration-ms="1481" started-at="2018-12-21T07:47:01Z" finished-at="2018-12-21T07:47:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddTaxTemplateExistTest status=SKIP method=TaxListPageTest.validateAddTaxTemplateExistTest()[pri:3, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="setup" is-config="true" duration-ms="18956" started-at="2018-12-21T07:47:02Z" finished-at="2018-12-21T07:47:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateBackButtonTest()[pri:4, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="validateBackButtonTest" duration-ms="1608" started-at="2018-12-21T07:47:21Z" finished-at="2018-12-21T07:47:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBackButtonTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="teardown" is-config="true" duration-ms="1471" started-at="2018-12-21T07:47:23Z" finished-at="2018-12-21T07:47:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateBackButtonTest status=SUCCESS method=TaxListPageTest.validateBackButtonTest()[pri:4, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.TaxListPageTest@1e9ddb4]" name="endReport" is-config="true" duration-ms="185" started-at="2018-12-21T07:47:24Z" finished-at="2018-12-21T07:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.avlview.app.testcases.TaxListPageTest -->
+    </test> <!-- TaxListPageTest -->
+    <test name="AddTaxPageTest" duration-ms="321444" started-at="2018-12-21T07:47:25Z" finished-at="2018-12-21T07:52:46Z">
+      <class name="com.avlview.app.testcases.AddTaxPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setExtent" is-config="true" duration-ms="11" started-at="2018-12-21T07:47:25Z" finished-at="2018-12-21T07:47:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="21534" started-at="2018-12-21T07:47:25Z" finished-at="2018-12-21T07:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAddTax()[pri:1, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateAddTax" duration-ms="1665" started-at="2018-12-21T07:47:46Z" finished-at="2018-12-21T07:47:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddTax -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1060" started-at="2018-12-21T07:47:48Z" finished-at="2018-12-21T07:47:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddTax status=SUCCESS method=AddTaxPageTest.validateAddTax()[pri:1, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="19185" started-at="2018-12-21T07:47:49Z" finished-at="2018-12-21T07:48:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateEmptyTaxdesc()[pri:2, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEmptyTaxdesc" duration-ms="3784" started-at="2018-12-21T07:48:08Z" finished-at="2018-12-21T07:48:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyTaxdesc -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="961" started-at="2018-12-21T07:48:12Z" finished-at="2018-12-21T07:48:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmptyTaxdesc status=SUCCESS method=AddTaxPageTest.validateEmptyTaxdesc()[pri:2, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="21046" started-at="2018-12-21T07:48:13Z" finished-at="2018-12-21T07:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateEmptyTaxamount()[pri:3, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEmptyTaxamount" duration-ms="4084" started-at="2018-12-21T07:48:34Z" finished-at="2018-12-21T07:48:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyTaxamount -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1041" started-at="2018-12-21T07:48:38Z" finished-at="2018-12-21T07:48:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmptyTaxamount status=SUCCESS method=AddTaxPageTest.validateEmptyTaxamount()[pri:3, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="24836" started-at="2018-12-21T07:48:39Z" finished-at="2018-12-21T07:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAddTax(java.util.Hashtable)[pri:4, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateAddTax" duration-ms="3766" started-at="2018-12-21T07:49:04Z" data-provider="getData" finished-at="2018-12-21T07:49:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Taxdesc=GST, Taxamt=12}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddTax -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1012" started-at="2018-12-21T07:49:08Z" finished-at="2018-12-21T07:49:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddTax status=SUCCESS method=AddTaxPageTest.validateAddTax(java.util.Hashtable)[pri:4, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18590" started-at="2018-12-21T07:49:09Z" finished-at="2018-12-21T07:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateUpdatepopupTest()[pri:5, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateUpdatepopupTest" duration-ms="2206" started-at="2018-12-21T07:49:27Z" finished-at="2018-12-21T07:49:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpdatepopupTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="926" started-at="2018-12-21T07:49:30Z" finished-at="2018-12-21T07:49:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUpdatepopupTest status=SUCCESS method=AddTaxPageTest.validateUpdatepopupTest()[pri:5, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18273" started-at="2018-12-21T07:49:30Z" finished-at="2018-12-21T07:49:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateEmptyTaxdescEdit()[pri:6, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEmptyTaxdescEdit" duration-ms="4619" started-at="2018-12-21T07:49:49Z" finished-at="2018-12-21T07:49:53Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You cannot leave tax description field empty.] but found [You just added a new tax type.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You cannot leave tax description field empty.] but found [You just added a new tax type.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.AddTaxPageTest.validateEmptyTaxdescEdit(AddTaxPageTest.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyTaxdescEdit -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1058" started-at="2018-12-21T07:49:53Z" finished-at="2018-12-21T07:49:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmptyTaxdescEdit status=SKIP method=AddTaxPageTest.validateEmptyTaxdescEdit()[pri:6, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18669" started-at="2018-12-21T07:49:54Z" finished-at="2018-12-21T07:50:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validateEmptyTaxdescEdit()[pri:6, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEmptyTaxdescEdit" duration-ms="4421" started-at="2018-12-21T07:50:13Z" finished-at="2018-12-21T07:50:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You cannot leave tax description field empty.] but found [You just added a new tax type.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You cannot leave tax description field empty.] but found [You just added a new tax type.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.AddTaxPageTest.validateEmptyTaxdescEdit(AddTaxPageTest.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyTaxdescEdit -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1514" started-at="2018-12-21T07:50:17Z" finished-at="2018-12-21T07:50:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmptyTaxdescEdit status=FAILURE method=AddTaxPageTest.validateEmptyTaxdescEdit()[pri:6, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18200" started-at="2018-12-21T07:50:19Z" finished-at="2018-12-21T07:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateEmptyTaxamountEdit()[pri:7, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEmptyTaxamountEdit" duration-ms="4353" started-at="2018-12-21T07:50:37Z" finished-at="2018-12-21T07:50:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You missed to enter tax percentage value.] but found [You just added a new tax type.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You missed to enter tax percentage value.] but found [You just added a new tax type.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.AddTaxPageTest.validateEmptyTaxamountEdit(AddTaxPageTest.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyTaxamountEdit -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="896" started-at="2018-12-21T07:50:42Z" finished-at="2018-12-21T07:50:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmptyTaxamountEdit status=SKIP method=AddTaxPageTest.validateEmptyTaxamountEdit()[pri:7, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18331" started-at="2018-12-21T07:50:42Z" finished-at="2018-12-21T07:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validateEmptyTaxamountEdit()[pri:7, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEmptyTaxamountEdit" duration-ms="4432" started-at="2018-12-21T07:51:01Z" finished-at="2018-12-21T07:51:05Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You missed to enter tax percentage value.] but found [You just added a new tax type.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You missed to enter tax percentage value.] but found [You just added a new tax type.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.AddTaxPageTest.validateEmptyTaxamountEdit(AddTaxPageTest.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyTaxamountEdit -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1424" started-at="2018-12-21T07:51:05Z" finished-at="2018-12-21T07:51:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmptyTaxamountEdit status=FAILURE method=AddTaxPageTest.validateEmptyTaxamountEdit()[pri:7, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="19325" started-at="2018-12-21T07:51:07Z" finished-at="2018-12-21T07:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateEditTax()[pri:8, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEditTax" duration-ms="4193" started-at="2018-12-21T07:51:26Z" finished-at="2018-12-21T07:51:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Changes made to the product have been saved.] but found [You just added a new tax type.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Changes made to the product have been saved.] but found [You just added a new tax type.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.AddTaxPageTest.validateEditTax(AddTaxPageTest.java:112)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEditTax -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1051" started-at="2018-12-21T07:51:30Z" finished-at="2018-12-21T07:51:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEditTax status=SKIP method=AddTaxPageTest.validateEditTax()[pri:8, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18678" started-at="2018-12-21T07:51:31Z" finished-at="2018-12-21T07:51:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validateEditTax()[pri:8, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateEditTax" duration-ms="4284" started-at="2018-12-21T07:51:50Z" finished-at="2018-12-21T07:51:54Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Changes made to the product have been saved.] but found [You just added a new tax type.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Changes made to the product have been saved.] but found [You just added a new tax type.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.AddTaxPageTest.validateEditTax(AddTaxPageTest.java:112)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEditTax -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1518" started-at="2018-12-21T07:51:54Z" finished-at="2018-12-21T07:51:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEditTax status=FAILURE method=AddTaxPageTest.validateEditTax()[pri:8, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="18800" started-at="2018-12-21T07:51:56Z" finished-at="2018-12-21T07:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateDeleteTax()[pri:9, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateDeleteTax" duration-ms="2926" started-at="2018-12-21T07:52:14Z" finished-at="2018-12-21T07:52:17Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <span _ngcontent-c26="">...</span> is not clickable at point (1161, 281). Other element would receive the click: <button _ngcontent-c26="" class="mat-menu-item" mat-menu-item="" role="menuitem" tabindex="0" aria-disabled="false">...</button>
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'MKRISHNAN', ip: '192.168.0.50', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\MKRISH~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63096}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: cece6dc6eb26aabe74ba99a499165512]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span _ngcontent-c26="">...</span> is not clickable at point (1161, 281). Other element would receive the click: <button _ngcontent-c26="" class="mat-menu-item" mat-menu-item="" role="menuitem" tabindex="0" aria-disabled="false">...</button>
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'MKRISHNAN', ip: '192.168.0.50', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\MKRISH~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63096}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: cece6dc6eb26aabe74ba99a499165512
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy15.click(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+at sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.avlview.app.pages.TaxListPage.validateDeleteTax(TaxListPage.java:200)
+at com.avlview.app.testcases.AddTaxPageTest.validateDeleteTax(AddTaxPageTest.java:119)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteTax -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1057" started-at="2018-12-21T07:52:17Z" finished-at="2018-12-21T07:52:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateDeleteTax status=SKIP method=AddTaxPageTest.validateDeleteTax()[pri:9, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="setup" is-config="true" duration-ms="23745" started-at="2018-12-21T07:52:18Z" finished-at="2018-12-21T07:52:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateDeleteTax()[pri:9, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="validateDeleteTax" duration-ms="2412" started-at="2018-12-21T07:52:42Z" finished-at="2018-12-21T07:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteTax -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="teardown" is-config="true" duration-ms="1075" started-at="2018-12-21T07:52:45Z" finished-at="2018-12-21T07:52:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateDeleteTax status=SUCCESS method=AddTaxPageTest.validateDeleteTax()[pri:9, instance:com.avlview.app.testcases.AddTaxPageTest@910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.AddTaxPageTest@910148]" name="endReport" is-config="true" duration-ms="245" started-at="2018-12-21T07:52:46Z" finished-at="2018-12-21T07:52:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.avlview.app.testcases.AddTaxPageTest -->
+    </test> <!-- AddTaxPageTest -->
+    <test name="ProductListPageTest" duration-ms="178235" started-at="2018-12-21T07:52:46Z" finished-at="2018-12-21T07:55:44Z">
+      <class name="com.avlview.app.testcases.ProductListPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setExtent" is-config="true" duration-ms="16" started-at="2018-12-21T07:52:46Z" finished-at="2018-12-21T07:52:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="19364" started-at="2018-12-21T07:52:46Z" finished-at="2018-12-21T07:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateProductpageExistTest()[pri:1, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateProductpageExistTest" duration-ms="1298" started-at="2018-12-21T07:53:05Z" finished-at="2018-12-21T07:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductpageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1134" started-at="2018-12-21T07:53:07Z" finished-at="2018-12-21T07:53:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateProductpageExistTest status=SUCCESS method=ProductListPageTest.validateProductpageExistTest()[pri:1, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="18441" started-at="2018-12-21T07:53:08Z" finished-at="2018-12-21T07:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAddProductExistTest()[pri:2, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateAddProductExistTest" duration-ms="1222" started-at="2018-12-21T07:53:26Z" finished-at="2018-12-21T07:53:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddProductExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1106" started-at="2018-12-21T07:53:28Z" finished-at="2018-12-21T07:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddProductExistTest status=SUCCESS method=ProductListPageTest.validateAddProductExistTest()[pri:2, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="18835" started-at="2018-12-21T07:53:29Z" finished-at="2018-12-21T07:53:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateAddProductTemplateExistTest()[pri:3, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateAddProductTemplateExistTest" duration-ms="2088" started-at="2018-12-21T07:53:47Z" finished-at="2018-12-21T07:53:50Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Product data's are avaialble so skipping the testcase.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Product data's are avaialble so skipping the testcase.
+at com.avlview.app.pages.ProductListPage.validateProductTemplate(ProductListPage.java:100)
+at com.avlview.app.testcases.ProductListPageTest.validateAddProductTemplateExistTest(ProductListPageTest.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddProductTemplateExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1145" started-at="2018-12-21T07:53:50Z" finished-at="2018-12-21T07:53:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddProductTemplateExistTest status=SKIP method=ProductListPageTest.validateAddProductTemplateExistTest()[pri:3, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="19436" started-at="2018-12-21T07:53:51Z" finished-at="2018-12-21T07:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateBackButtonTest()[pri:4, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateBackButtonTest" duration-ms="1762" started-at="2018-12-21T07:54:10Z" finished-at="2018-12-21T07:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBackButtonTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1009" started-at="2018-12-21T07:54:12Z" finished-at="2018-12-21T07:54:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateBackButtonTest status=SUCCESS method=ProductListPageTest.validateBackButtonTest()[pri:4, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="18399" started-at="2018-12-21T07:54:13Z" finished-at="2018-12-21T07:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateAddProduct()[pri:5, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateAddProduct" duration-ms="1680" started-at="2018-12-21T07:54:31Z" finished-at="2018-12-21T07:54:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddProduct -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1049" started-at="2018-12-21T07:54:33Z" finished-at="2018-12-21T07:54:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddProduct status=SUCCESS method=ProductListPageTest.validateAddProduct()[pri:5, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="21419" started-at="2018-12-21T07:54:34Z" finished-at="2018-12-21T07:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateSearchExistTest()[pri:6, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateSearchExistTest" duration-ms="1287" started-at="2018-12-21T07:54:55Z" finished-at="2018-12-21T07:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1064" started-at="2018-12-21T07:54:57Z" finished-at="2018-12-21T07:54:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateSearchExistTest status=SUCCESS method=ProductListPageTest.validateSearchExistTest()[pri:6, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="18514" started-at="2018-12-21T07:54:58Z" finished-at="2018-12-21T07:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateDeleteProduct()[pri:7, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateDeleteProduct" duration-ms="2399" started-at="2018-12-21T07:55:16Z" finished-at="2018-12-21T07:55:19Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You just deleted a product from records.] but found [Sorry, an error occurred. The servers are unable to complete your request at the moment. Please try again after a few minutes.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You just deleted a product from records.] but found [Sorry, an error occurred. The servers are unable to complete your request at the moment. Please try again after a few minutes.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.ProductListPageTest.validateDeleteProduct(ProductListPageTest.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteProduct -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="975" started-at="2018-12-21T07:55:19Z" finished-at="2018-12-21T07:55:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateDeleteProduct status=SKIP method=ProductListPageTest.validateDeleteProduct()[pri:7, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="setup" is-config="true" duration-ms="20944" started-at="2018-12-21T07:55:20Z" finished-at="2018-12-21T07:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validateDeleteProduct()[pri:7, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="validateDeleteProduct" duration-ms="1961" started-at="2018-12-21T07:55:41Z" finished-at="2018-12-21T07:55:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [You just deleted a product from records.] but found [Sorry, an error occurred. The servers are unable to complete your request at the moment. Please try again after a few minutes.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [You just deleted a product from records.] but found [Sorry, an error occurred. The servers are unable to complete your request at the moment. Please try again after a few minutes.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.ProductListPageTest.validateDeleteProduct(ProductListPageTest.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteProduct -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="teardown" is-config="true" duration-ms="1471" started-at="2018-12-21T07:55:43Z" finished-at="2018-12-21T07:55:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateDeleteProduct status=FAILURE method=ProductListPageTest.validateDeleteProduct()[pri:7, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.avlview.app.testcases.ProductListPageTest@1b53d44]" name="endReport" is-config="true" duration-ms="187" started-at="2018-12-21T07:55:44Z" finished-at="2018-12-21T07:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.avlview.app.testcases.ProductListPageTest -->
+    </test> <!-- ProductListPageTest -->
+    <test name="AddProductPageTest" duration-ms="42483" started-at="2018-12-21T07:55:44Z" finished-at="2018-12-21T07:56:27Z">
+      <class name="com.avlview.app.testcases.AddProductPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setExtent" is-config="true" duration-ms="8" started-at="2018-12-21T07:55:44Z" finished-at="2018-12-21T07:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="42083" started-at="2018-12-21T07:55:44Z" finished-at="2018-12-21T07:56:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateAddProduct()[pri:1, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="validateAddProduct" duration-ms="0" started-at="2018-12-21T07:56:26Z" finished-at="2018-12-21T07:56:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddProduct -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:26Z" finished-at="2018-12-21T07:56:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="AddProductTest(java.util.Hashtable)[pri:2, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="AddProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" data-provider="getData" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="AddProductTest(java.util.Hashtable)[pri:2, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="AddProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" data-provider="getData" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="AddProductTest(java.util.Hashtable)[pri:2, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="AddProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" data-provider="getData" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="AddProductTest(java.util.Hashtable)[pri:2, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="AddProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" data-provider="getData" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="AddProductTest(java.util.Hashtable)[pri:2, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="AddProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" data-provider="getData" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="AddProductTest(java.util.Hashtable)[pri:2, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="AddProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" data-provider="getData" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="SearchAddedProductTest()[pri:3, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="SearchAddedProductTest" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed
+at org.testng.Assert.fail(Assert.java:96)
+at com.avlview.app.testcases.AddProductPageTest.setup(AddProductPageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchAddedProductTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="teardown" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:com.avlview.app.testcases.AddProductPageTest@1912c99]" name="endReport" is-config="true" duration-ms="0" started-at="2018-12-21T07:56:27Z" finished-at="2018-12-21T07:56:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.avlview.app.testcases.AddProductPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- AddProductPageTest -->
+  </suite> <!-- Suite -->
 </testng-results>

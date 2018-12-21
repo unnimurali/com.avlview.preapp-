@@ -55,7 +55,8 @@ public class AddTaxPage extends TestBase {
 	}
 
 	public String validateEmptyTaxamount() throws IOException, InterruptedException {
-
+		taxdesc.click();
+		taxdesc.sendKeys("Test");
 		taxamt.clear();
 		taxamt.click();
 		addtaxbtn.click();

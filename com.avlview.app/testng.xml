@@ -2,12 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<listeners>
 
+	<!-- <test name="ProductListPageTest">
+		<classes>
+			<class name="rough.test1" />
+		</classes>
+	</test> -->
+
+	<listeners>
 		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" />
 		<listener class-name="com.avlview.Analyzer.MyTransformer" />
-
-
 	</listeners>
 
 
@@ -23,7 +27,62 @@
 		</classes>
 	</test>
 
-	<test name="ClientsPageTest">
+
+	<test name="SettingsPageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.SettingsPageTest" />
+		</classes>
+	</test>
+
+	<test name="TaxListPageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.TaxListPageTest" />
+		</classes>
+	</test>
+
+	<test name="AddTaxPageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.AddTaxPageTest" />
+		</classes>
+	</test>
+	
+	
+	<!-- <test name="DeviceListPageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.DeviceListPageTest" />
+		</classes>
+	</test>
+	
+	<test name="AddDevicePageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.AddDevicePageTest" />
+		</classes>
+	</test>
+	
+	<test name="UpdateDevicePageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.UpdateDevicePageTest" />
+		</classes>
+	</test> -->
+	
+	
+	
+	<test name="ProductListPageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.ProductListPageTest" />
+		</classes>
+	</test>
+	
+	<test name="AddProductPageTest">
+		<classes>
+			<class name="com.avlview.app.testcases.AddProductPageTest" />
+		</classes>
+	</test>
+	
+
+	
+
+	<!-- <test name="ClientsPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.ClientsPageTest" />
 		</classes>
@@ -39,7 +98,7 @@
 		<classes>
 			<class name="com.avlview.app.testcases.AddVehicleTest" />
 		</classes>
-	</test>
+	</test> -->
 
 
 
@@ -47,4 +106,3 @@
 
 
 </suite> <!-- Suite -->
-  

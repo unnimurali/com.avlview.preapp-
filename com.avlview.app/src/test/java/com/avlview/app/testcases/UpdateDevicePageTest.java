@@ -43,7 +43,7 @@ public class UpdateDevicePageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validateUpdatepopupTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateUpdatepopupTest");
 		dlp.search();
@@ -53,7 +53,7 @@ public class UpdateDevicePageTest extends TestBase {
 		Assert.assertEquals(validateupdatescreen, "Update Device");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void validateIMEIEnableTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateIMEIEnableTest");
 		dlp.search();
@@ -63,7 +63,7 @@ public class UpdateDevicePageTest extends TestBase {
 		Assert.assertTrue(validateemeistatus);
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void validateUpdateDeviceTest() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateUpdateDeviceTest");
 		dlp.search();

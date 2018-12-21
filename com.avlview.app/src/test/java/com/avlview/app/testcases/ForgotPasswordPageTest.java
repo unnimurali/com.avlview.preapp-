@@ -72,7 +72,7 @@ public class ForgotPasswordPageTest extends TestBase {
 		Assert.assertEquals(validateloginpage, "Sign in");
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 6, enabled = true)
 	public void validateNouserClickTest() throws IOException {
 		extentTest = extent.startTest("validateNouserClickTest");
 		fp = lp.ForgotPassword();

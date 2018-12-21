@@ -47,7 +47,7 @@ public class AddProductPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void validateAddProduct() throws InterruptedException, IOException {
 		extentTest = extent.startTest("validateAddProduct");
 		app = plp.addProductclick();
@@ -55,7 +55,7 @@ public class AddProductPageTest extends TestBase {
 		Assert.assertEquals(validateaddproduct, "Add Product");
 	}
 
-	@Test(priority = 2, enabled = false, dataProvider = "getData")
+	@Test(priority = 2, enabled = true, dataProvider = "getData")
 	public void AddProductTest(Hashtable<String, String> data) throws IOException, InterruptedException, AWTException {
 
 		extentTest = extent.startTest("AddProductTest");

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.SkipException;
 
 import com.avlview.app.base.TestBase;
+import com.avlview.app.utilities.JavaScriptUtil;
 
 public class ProductListPage extends TestBase {
 
@@ -46,6 +47,9 @@ public class ProductListPage extends TestBase {
 	@FindBy(xpath = "//span[contains(text(),'Edit')]")
 	WebElement edit;
 
+	@FindBy(xpath = "//span[contains(text(),'Delete')]")
+	WebElement delete;
+
 	@FindBy(xpath = "//span[@class='md-subhead ng-star-inserted']")
 	WebElement updatetext;
 
@@ -57,6 +61,9 @@ public class ProductListPage extends TestBase {
 
 	@FindBy(xpath = "//span[contains(text(),'Add')]")
 	WebElement newproduct;
+
+	@FindBy(xpath = "//span[contains(text(),'Yes')]")
+	WebElement confirmdeletion;
 
 	public String validateProductPage() {
 		wait = new WebDriverWait(driver, 60); // wait for 5 seconds
@@ -151,6 +158,20 @@ public class ProductListPage extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(updatetext));
 
 		return updatetext.getText();
+
+	}
+
+	public String validateDeleteTax() throws IOException, InterruptedException {
+
+		icon.click();
+		delete.click();
+		confirmdeletion.click();
+
+		JavaScriptUtil.scrollIntoView(validationmsg, driver);
+		JavaScriptUtil.drawBorder(validationmsg, driver);
+
+		return validationmsg.getText();
+		// // System.out.println(validationmsg.getText());
 
 	}
 
